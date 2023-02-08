@@ -1,0 +1,54 @@
+@import "../../main.scss";
+
+.offre {
+  background-color: $primary-yellow-color-light;
+  width: 27rem;
+  height: 20rem;
+  border-radius: 2.5rem;
+  margin: 5rem 0 2rem 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .offre-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 3px solid $primary-yellow-color-dark;
+    border-radius: 50%;
+    width: 8rem;
+    height: 8rem;
+    position: absolute;
+    top: -4rem;
+    left: 9rem;
+  }
+
+  .offre-description {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    margin: 1rem 0;
+
+    p {
+      font-size: 2rem;
+      font-weight: 600;
+      text-align: center;
+    }
+    span {
+      width: 20rem;
+      font-size: 1.5rem;
+      font-weight: 400;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 1445px) {
+ .offre {
+    display: none;
+  }
+}
+

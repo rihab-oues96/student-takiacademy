@@ -1,0 +1,39 @@
+@import "../../main.scss";
+
+.submenu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  background-color: white;
+  border: 1px solid $border-blue-color-light;
+  box-shadow: 0px 6px 0px -2px $border-blue-color-light;
+  z-index: 10;
+  width: 26rem;
+  height: 21.5rem;
+  border-radius: 2rem;
+  padding: 2rem;
+  gap: 2rem;
+  top: 8rem;
+  right: 4rem;
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    gap: 2rem;
+
+    p {
+      font-size: 1.7rem;
+      font-weight: 400;
+      color: $primary-blue-color-light;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .submenu {
+    right: 2rem;
+  }
+}

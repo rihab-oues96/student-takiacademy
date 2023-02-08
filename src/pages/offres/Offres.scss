@@ -1,0 +1,40 @@
+@import "../../main.scss";
+
+.offres {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: calc(100vw - 33rem);
+  padding: 4rem 2rem;
+
+  .main-title {
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+  }
+
+  .offres-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .offres {
+    width: calc(100vw - 10rem);
+
+    .offres-cards {
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .offres {
+    width: 100vw;
+  }
+}

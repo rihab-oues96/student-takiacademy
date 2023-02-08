@@ -1,0 +1,56 @@
+@import "../../main.scss";
+
+.forum-card-info {
+  width: 37rem;
+
+  .heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    .title {
+      color: $font-black-loght-color;
+      font-size: 1.6rem;
+      font-weight: 500;
+    }
+  }
+
+  .content {
+    background-color: white;
+    margin-top: 1rem;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    gap: 1.5rem;
+    border: $border-gray-fine;
+    display: flex;
+    flex-direction: column;
+
+    .question {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+
+      p {
+        width: 20rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: $font-black-loght-color;
+      }
+
+      span {
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: $font-gray-color-dark2;
+      }
+    }
+
+    .line {
+      width: 33rem;
+      height: 1px;
+      background: $border-gray;
+    }
+  }
+}

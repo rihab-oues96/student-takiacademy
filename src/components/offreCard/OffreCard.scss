@@ -1,0 +1,131 @@
+@import "../../main.scss";
+
+.offre-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 47rem;
+  height: 30rem;
+  border-radius: 3rem;
+  border: $border-gray-fine;
+
+  .title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 4rem;
+    text-align: center;
+  }
+
+  .price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30rem;
+    height: 5rem;
+    border-radius: 2rem;
+
+    span {
+      font-size: 1.8rem;
+      font-weight: 700;
+      line-height: 2.5rem;
+    }
+  }
+}
+
+.silver {
+  .title {
+    color: $silver-main-color;
+  }
+
+  .price {
+    background-color: $silver-main-color-light;
+  }
+
+  .subscribe-btn {
+    background-color: $silver-main-color;
+
+    p {
+      color: white;
+    }
+  }
+}
+
+.silverPlus {
+  .title {
+    color: $silverPlus-main-color;
+  }
+
+  .price {
+    background-color: $silverPlus-main-color-light;
+  }
+
+  .subscribe-btn {
+    background-color: $silverPlus-main-color;
+
+    p {
+      color: white;
+    }
+  }
+}
+
+.gold {
+  .title {
+    color: $gold-main-color;
+  }
+
+  .price {
+    background-color: $gold-main-color-light;
+  }
+
+  .subscribe-btn {
+    background-color: $gold-main-color;
+
+    p {
+      color: white;
+    }
+  }
+}
+
+.optimum {
+  .title {
+    color: $optimum-main-color;
+  }
+
+  .price {
+    background-color: $optimum-main-color-light;
+  }
+
+  .subscribe-btn {
+    background-color: $optimum-main-color;
+
+    p {
+      color: white;
+    }
+  }
+}
+
+.hessaty {
+  .title {
+    color: $hessaty-main-color;
+  }
+
+  .price {
+    background-color: $hessaty-main-color-light;
+  }
+
+  .subscribe-btn {
+    background-color: $hessaty-main-color;
+
+    p {
+      color: white;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .offre-card {
+    width: 32rem;
+  }
+}

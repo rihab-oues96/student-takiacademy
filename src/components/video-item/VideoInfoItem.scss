@@ -1,0 +1,45 @@
+@import "../../main.scss";
+
+.video-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  .info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+    .description {
+      display: flex;
+      flex-direction: column;
+
+      p {
+        font-size: 1.6rem;
+        font-weight: 500;
+      }
+      span {
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: $font-gray-color-light;
+      }
+    }
+  }
+
+  .date-info {
+    width: 15rem;
+    p {
+      color: $font-gray-color-dark;
+      font-size: 1.4rem;
+      font-weight: 500;
+    }
+    span {
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: $font-gray-color-light;
+    }
+  }
+}

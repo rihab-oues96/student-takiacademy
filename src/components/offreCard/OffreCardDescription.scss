@@ -1,0 +1,240 @@
+@import "../../main.scss";
+
+.offre-card-description {
+  width: 68rem;
+  min-height: 100vh;
+  border-top-left-radius: 3rem;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  .icon-close {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    gap: 2rem;
+    font-family: Tajawal;
+
+    .title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 4rem;
+      text-align: center;
+      color: $silver-main-color;
+    }
+
+    .period {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 25rem;
+      height: 4.5rem;
+      border-radius: 2rem;
+      border: $border-gray-fine;
+
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-radius: 2rem;
+        font-size: 1.6rem;
+        font-weight: 400;
+        width: 50%;
+        height: 100%;
+
+        &:active {
+          color: white;
+          background-color: $primary-blue-color;
+        }
+      }
+
+      .selected {
+        color: white;
+        background-color: $primary-blue-color;
+      }
+    }
+    .price {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      width: 31rem;
+      height: 6.3rem;
+      border-radius: 2rem;
+      background-color: $silver-main-color-light;
+      p {
+        font-weight: 700;
+        font-size: 2.4rem;
+        line-height: 2.9rem;
+      }
+    }
+    .description-title {
+      display: flex;
+      flex-direction: row;
+      margin: 1rem 0;
+      gap: 1rem;
+      font-weight: 700;
+      font-size: 2.1rem;
+      line-height: 2.52rem;
+      span {
+        color: $silver-main-color;
+      }
+    }
+    .description-content {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      .row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.5rem;
+        p {
+          text-align: right;
+          width: 40rem;
+          font-weight: 400;
+          font-size: 2rem;
+          line-height: 2.4rem;
+        }
+      }
+    }
+    .subscribe-btn {
+      margin-top: 2rem;
+      background-color: $silver-main-color;
+      p {
+        color: white;
+      }
+    }
+  }
+}
+
+.silverPlus {
+  .content {
+    .title {
+      color: $silverPlus-main-color;
+    }
+    .period {
+      .selected {
+        background-color: $silverPlus-main-color;
+      }
+      span {
+        &:active {
+          color: white;
+          background-color: $silverPlus-main-color;
+        }
+      }
+    }
+    .price {
+      background-color: $silverPlus-main-color-light;
+    }
+    .description-title {
+      span {
+        color: $silverPlus-main-color;
+      }
+    }
+    .subscribe-btn {
+      background-color: $silverPlus-main-color;
+    }
+  }
+}
+
+.gold {
+  .content {
+    .title {
+      color: $gold-main-color;
+    }
+    .period {
+      .selected {
+        background-color: $gold-main-color;
+      }
+      span {
+        &:active {
+          color: white;
+          background-color: $gold-main-color;
+        }
+      }
+    }
+    .price {
+      background-color: $gold-main-color-light;
+    }
+    .description-title {
+      span {
+        color: $gold-main-color;
+      }
+    }
+    .subscribe-btn {
+      background-color: $gold-main-color;
+    }
+  }
+}
+
+.optimum {
+  .content {
+    .title {
+      color: $optimum-main-color;
+    }
+    .period {
+      .selected {
+        background-color: $optimum-main-color;
+      }
+
+      span {
+        &:active {
+          color: white;
+          background-color: $optimum-main-color;
+        }
+      }
+    }
+    .price {
+      background-color: $optimum-main-color-light;
+    }
+    .description-title {
+      span {
+        color: $optimum-main-color;
+      }
+    }
+    .subscribe-btn {
+      background-color: $optimum-main-color;
+    }
+  }
+}
+
+.hessaty {
+  .content {
+    .title {
+      color: $hessaty-main-color;
+    }
+    .period {
+      .selected {
+        background-color: $hessaty-main-color;
+      }
+      span {
+        &:active {
+          color: white;
+          background-color: $hessaty-main-color;
+        }
+      }
+    }
+    .price {
+      background-color: $hessaty-main-color-light;
+    }
+    .description-title {
+      span {
+        color: $hessaty-main-color;
+      }
+    }
+    .subscribe-btn {
+      background-color: $hessaty-main-color;
+    }
+  }
+}

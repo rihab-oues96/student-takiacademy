@@ -1,0 +1,229 @@
+@import "../../main.scss";
+
+.header {
+  height: 7.5rem;
+  width: calc(100vw - 33rem);
+  border-bottom: $border-gray-fine;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  .menu-icon {
+    display: none;
+  }
+
+  .search-bloc {
+    width: 55rem;
+    height: 5rem;
+    border: $border-gray-fine;
+    border-radius: 1rem;
+    margin-left: 3rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    img {
+      margin-left: 2rem;
+      filter: invert(70%) sepia(6%) saturate(11%) hue-rotate(337deg)
+        brightness(94%) contrast(91%);
+    }
+
+    input {
+      border: none;
+      width: 100%;
+
+      &::placeholder {
+        font-size: 1.6rem;
+        font-weight: 100;
+        color: $font-gray-color;
+      }
+    }
+  }
+
+  .right-side {
+    display: flex;
+    flex-direction: row;
+    padding-right: 4rem;
+
+    .infos {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 21rem;
+
+      .language {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        height: 5rem;
+        border-radius: 2.5rem;
+        padding: 1rem;
+        border: $border-gray-fine;
+      }
+
+      a {
+        text-decoration: none;
+      }
+      .wallet {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        height: 5rem;
+        border-radius: 2.5rem;
+        padding: 1rem;
+        width: 15rem;
+        border: $border-gray-fine;
+
+        img {
+          filter: invert(49%) sepia(25%) saturate(4652%) hue-rotate(169deg)
+            brightness(103%) contrast(103%);
+        }
+
+        .solde {
+          display: flex;
+          flex-direction: column;
+
+          p {
+            font-size: 1.4rem;
+            font-weight: 400;
+            line-height: 24px;
+            color: black;
+            text-align: left;
+          }
+
+          span {
+            color: $primary-blue-color;
+            font-size: 1.6rem;
+            font-weight: 500;
+            line-height: 19.5px;
+          }
+        }
+      }
+
+      .notification {
+        height: 5rem;
+        border-radius: 2.5rem;
+        padding: 1rem;
+        border: $border-gray-fine;
+        cursor: pointer;
+      }
+    }
+
+    .user {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 2rem;
+      width: 26.5rem;
+      margin: 0 4rem;
+
+      .user-desc {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+
+        p {
+          width: 16rem;
+          font-size: 1.7rem;
+          font-weight: 500;
+          line-height: 25.5px;
+        }
+
+        span {
+          font-size: 1.5rem;
+          font-weight: 400;
+          line-height: 15px;
+          color: $font-gray-color;
+        }
+      }
+
+      img {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .header {
+    .search-bloc {
+      width: 40rem;
+    }
+
+    .right-side {
+      padding: 0;
+      .user {
+        margin: 0 2rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    width: calc(100vw - 20rem);
+    justify-content: space-between;
+    .search-bloc {
+      width: 30rem;
+    }
+    .right-side {
+      .infos {
+        width: 11rem;
+        .wallet {
+          width: 5rem;
+          justify-content: center;
+          .solde {
+            display: none;
+          }
+        }
+      }
+      .user {
+        width: 10rem;
+        .user-desc {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    width: calc(100vw - 10rem);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header {
+    width: 100vw;
+
+    .menu-icon {
+      display: initial;
+      width: 3rem;
+      height: 3rem;
+      margin-left: 2rem;
+    }
+    .search-bloc {
+      width: 5rem;
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+
+      input {
+        display: none;
+      }
+
+      img {
+        margin: 0;
+      }
+    }
+  }
+}

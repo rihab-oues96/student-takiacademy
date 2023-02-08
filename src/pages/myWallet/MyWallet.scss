@@ -1,0 +1,195 @@
+@import "../../main.scss";
+
+.my-wallet {
+  display: flex;
+  flex-direction: column;
+  width: calc(100vw - 33rem);
+  padding: 4rem 2rem;
+
+  .main-title {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+    color: $font-black-loght-color;
+  }
+
+  .heading {
+    display: flex;
+    flex-direction: column;
+
+    .wallet-content {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 2rem;
+      margin-top: 1rem;
+
+      .current-Balance {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 38.7rem;
+        height: 14.8rem;
+        padding: 2rem;
+
+        border: 2px solid $border-blue-color-light;
+        border-radius: 1rem;
+        box-shadow: 0px 6px 0px -2px $border-blue-color-light;
+        gap: 1rem;
+
+        .wallet-info {
+          font-size: 1.9rem;
+          font-weight: 400;
+          line-height: 2.85rem;
+          color: $font-gray-dark-color5;
+
+          span {
+            font-size: 2.4rem;
+            font-weight: 600;
+            line-height: 3.6rem;
+            color: $primary-blue-color;
+          }
+          .amount {
+            color: black;
+            margin: 0 5px;
+          }
+        }
+
+        .btns {
+          display: flex;
+          flex-direction: row;
+          gap: 2rem;
+        }
+      }
+
+      .paiment-accounts {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 111.3rem;
+        height: 14.8rem;
+        padding: 2rem 3rem;
+        border-radius: 1rem;
+        border: 2px solid $border-blue-color-light;
+        box-shadow: 0px 6px 0px -2px $border-blue-color-light;
+
+        .account {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          gap: 1rem;
+          width: 38.7rem;
+
+          .account-info,
+          .account-name,
+          .account-rib {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            span {
+              font-size: 1.6rem;
+              font-weight: 400;
+              line-height: 2.4rem;
+              margin-right: 1rem;
+              color: $font-gray-color-dark4;
+            }
+
+            p {
+              font-size: 1.6rem;
+              font-weight: 500;
+              line-height: 2.4rem;
+            }
+          }
+
+          .account-2 {
+            border-right: 1px solid $border-blue-color-light;
+          }
+
+          .account-info {
+            gap: 1rem;
+            p {
+              font-size: 1.9rem;
+              font-weight: 400;
+              line-height: 2.85rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .content {
+    margin-top: 5rem;
+
+    table {
+      border: 2px solid $border-blue-color-light;
+      border-radius: 2rem;
+      width: 100%;
+      height: 8rem;
+
+      .line-1 {
+        .column {
+          p {
+            font-size: 1.6rem;
+            font-weight: 500;
+            line-height: 2.4rem;
+            color: $primary-orange-color;
+          }
+        }
+      }
+
+      .line {
+        height: 5rem;
+
+        .column {
+          font-size: 1.5rem;
+          font-weight: 500;
+          width: 26rem;
+          text-align: center;
+          border-right: 2px solid $border-blue-color-light;
+          border-bottom: 2px solid $border-blue-color-light;
+
+          span {
+            display: flex;
+            align-items: center;
+            margin-left: 2rem;
+          }
+        }
+
+        .col-6 {
+          border-right: none;
+        }
+      }
+
+      .last-line {
+        width: 100%;
+        border-radius: 1rem;
+        box-shadow: 0px 7px 0px -2px $border-blue-color-light;
+
+        .column-buttom,
+        .column-buttom-end {
+          p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            font-size: 1.4rem;
+            font-weight: 400;
+
+            img {
+              cursor: pointer;
+            }
+
+            span {
+              img {
+                margin-left: 1rem;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

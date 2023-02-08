@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Poppins;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+$very-dark-blue: #008ed1;
+
+$primary-blue-color: #00aaf9;
+$primary-blue-color-dark: #009edb;
+$primary-blue-color-light: #5699b8;
+
+$background-blue-color-dark: #42aee1;
+$background-blue-color-dark2: #9ad5f1;
+$background-blue-color-dark3: #e0f5ff;
+$background-blue-color: #ceeaf8;
+$background-blue-color-light: #f5fbff;
+$background-blue-color-light1: #e4f4fc;
+$background-blue-color-light2: #e5f3f5;
+$background-yellow-color-light: #feedb3;
+$background-yellow-color-light1: #fffaeb;
+$background-yellow-color-light2: #fff6dc;
+$background-purpule-color-dark: #ebb3ff;
+$background-purpule-color-light: #faebff;
+$background-orange-color: #fff2ec;
+
+$primary-yellow-color: #ffe500;
+$primary-yellow-color-dark: #fcc102;
+$primary-yellow-color-light: #ffe9a4;
+$primary-orange-color: #f3941b;
+$primary-brown-color: #854b05;
+$primary-pink-color: #ed3863;
+$primary-purpule-color: #644a9c;
+$primary-red-color: #ff0f0f;
+
+$font-gray-color: #a5a5a5;
+$font-brown-dark-color: #4d3a00;
+$font-brown-dark-color2: #3c2d00;
+$font-brown-dark-color3: #515151;
+
+$font-black-loght-color: #464646;
+$font-gray-color-light: #9a9a9a;
+$font-gray-color-light2: #949494;
+$font-gray-color-dark: #606060;
+$font-gray-color-dark2: #959090;
+$font-gray-color-dark3: #9c9c9c;
+$font-gray-color-dark4: #7c7c7c;
+$font-gray-dark-color5: #8d8d8d;
+
+$border-gray: #e8e8e8;
+$border-blue-color: #9ad5f1;
+$border-blue-color-dark: #bbe2f4;
+$border-blue-color-light: #e2f4fe;
+
+$border-gray-fine: 1px solid $border-gray;
+
+$silver-main-color: #35bbe3;
+$silver-main-color-light: #f2fafd;
+
+$silverPlus-main-color: #73c725;
+$silverPlus-main-color-light: #f7fdf2;
+
+$gold-main-color: #f6a42c;
+$gold-main-color-light: #fffbf0;
+
+$optimum-main-color: #2e5da7;
+$optimum-main-color-light: #f3f6fc;
+
+$hessaty-main-color: #654997;
+$hessaty-main-color-light: #eeeaf5;

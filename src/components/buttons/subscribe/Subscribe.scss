@@ -1,0 +1,18 @@
+@import "../../../main.scss";
+
+.subscribe-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 26rem;
+  height: 5rem;
+  border-radius: 3rem;
+
+  p {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2rem;
+    text-align: center;
+  }
+}

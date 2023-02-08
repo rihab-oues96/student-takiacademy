@@ -1,0 +1,18 @@
+@import "../../../main.scss";
+
+.upgrate-btn {
+  height: 5rem;
+  width: 24rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 1.5rem;
+  box-shadow: 0px 6px 0px -2px $primary-yellow-color-dark;
+
+  p {
+    color: $font-brown-dark-color;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+}

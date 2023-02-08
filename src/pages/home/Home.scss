@@ -1,0 +1,96 @@
+@import "../../main.scss";
+
+.home {
+  width: calc(100vw - 33rem);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .left-side-home {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+
+    .learning,
+    .videos-infos {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 4rem;
+    }
+  }
+
+  .right-side-home {
+    background-color: $background-blue-color-light;
+    width: 40rem;
+    padding: 4rem 0;
+    gap: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .home {
+    align-items: center;
+    justify-content: center;
+
+    .left-side-home {
+      .learning,
+      .videos-infos {
+        justify-content: center;
+        gap: 4rem;
+      }
+    }
+
+    .right-side-home {
+      width: 95%;
+      padding: 2rem 0;
+      gap: 6rem;
+      border-radius: 2rem;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .home {
+    width: calc(100vw - 20rem);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    width: calc(100vw - 10rem);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .home {
+    margin-top: 2rem;
+    width: 100vw;
+    .left-side-home {
+      padding: 1rem;
+    }
+
+    .right-side-home {
+      width: 100%;
+      padding: 2rem 1rem;
+      border-radius: none;
+      .live-session-small {
+        width: 100%;
+      }
+
+      .forum-card-info {
+        width: 100%;
+      }
+    }
+  }
+}

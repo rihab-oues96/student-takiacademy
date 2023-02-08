@@ -1,0 +1,79 @@
+@import "../../../main.scss";
+
+.blue-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: $primary-blue-color;
+  box-shadow: 0px 6px 0px -2px $primary-blue-color-dark;
+  width: 37rem;
+  height: 6rem;
+  border-radius: 2rem;
+
+  p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.7rem;
+    color: white;
+  }
+}
+
+.current-offre-btn {
+  width: 27.2rem;
+  height: 5rem;
+
+  p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color: white;
+  }
+}
+
+.wallet-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 15.7rem;
+  height: 5rem;
+  border-radius: 1rem;
+  box-shadow: 0px 6px 0px -2px $very-dark-blue;
+
+  .btn-content {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+}
+
+.btn-add {
+  background-color: $primary-blue-color;
+  .btn-content {
+    color: white;
+  }
+}
+
+.btn-trans {
+  border: 1px solid $very-dark-blue;
+  background-color: white;
+  .btn-content {
+    color: $primary-blue-color;
+  }
+}
+
+.add-points {
+  height: 5rem;
+  border-radius: 1rem;
+}
+
+@media screen and (max-width: 425px) {
+  .blue-btn {
+    width: 32rem;
+  }
+
+  .current-offre-btn {
+    width: 28rem;
+  }
+}

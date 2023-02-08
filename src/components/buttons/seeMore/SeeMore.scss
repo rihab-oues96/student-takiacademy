@@ -1,0 +1,18 @@
+@import "../../../main.scss";
+
+.btn-seeMore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: $border-gray-fine;
+  background-color: white;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 1rem;
+
+  p {
+    color: $primary-blue-color;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+}

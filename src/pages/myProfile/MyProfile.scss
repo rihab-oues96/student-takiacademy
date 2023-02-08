@@ -1,0 +1,241 @@
+@import "../../main.scss";
+
+.my-profile {
+  display: flex;
+  flex-direction: column;
+  width: calc(100vw - 33rem);
+  padding: 4rem 2rem;
+
+  .main-title {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+    color: $font-black-loght-color;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+
+    .user-bloc {
+      display: flex;
+      flex-direction: column;
+
+      .user {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 37rem;
+        height: 23rem;
+        margin-bottom: 1.5rem;
+        border-radius: 1rem;
+        border: 2px solid $border-blue-color-light;
+        box-shadow: 0px 6px 0px -2px $border-blue-color-light;
+
+        img {
+          width: 11rem;
+        }
+
+        .user-name {
+          font-size: 2rem;
+          font-weight: 500;
+          line-height: 3rem;
+        }
+
+        .class {
+          font-size: 1.8rem;
+          font-weight: 400;
+          line-height: 2.4rem;
+          color: $font-gray-color-dark4;
+        }
+      }
+    }
+
+    .profile-infos {
+      border-radius: 1rem;
+      padding: 2rem;
+      border: 2px solid $border-blue-color-light;
+      box-shadow: 0px 6px 0px -2px $border-blue-color-light;
+      width: 75rem;
+      // height: 56rem;
+
+      .title-p {
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 2.4rem;
+        color: $primary-orange-color;
+      }
+
+      .info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .row {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          width: 35rem;
+
+          p {
+            width: 12rem;
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.4rem;
+            color: $font-gray-color-dark4;
+          }
+
+          span {
+            font-size: 1.6rem;
+            font-weight: 400;
+            margin-right: 1rem;
+          }
+        }
+      }
+
+      .account-info,
+      .education-info,
+      .personal-info {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .info {
+          .row {
+            .btn-up {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              cursor: pointer;
+              font-size: 1.3rem;
+              font-weight: 500;
+              border-radius: 1rem;
+              padding: 1rem;
+              color: $primary-blue-color;
+              border: 1px solid $primary-blue-color;
+            }
+          }
+        }
+      }
+
+      .gray-line {
+        background-color: $border-gray;
+        height: 2px;
+        width: 100%;
+        margin: 2rem 0;
+      }
+    }
+
+    .current-offre {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 1rem;
+      border: 2px solid $border-blue-color-light;
+      box-shadow: 0px 6px 0px -2px $border-blue-color-light;
+      width: 37rem;
+      height: 35rem;
+      gap: 1.5rem;
+
+      img {
+        width: 12.2rem;
+        height: 8rem;
+      }
+
+      .desc {
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 2.1px;
+        color: $font-gray-color-dark4;
+      }
+
+      .offre-name {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 30px;
+        color: $font-brown-dark-color2;
+      }
+
+      .duration {
+        color: $font-brown-dark-color2;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 2.1rem;
+
+        span {
+          color: $primary-red-color;
+        }
+      }
+
+      .progression {
+        width: 24.5rem;
+        height: 1.2rem;
+        border-radius: 1rem;
+        background-color: $border-blue-color-light;
+
+        .level {
+          width: 60%;
+          height: 100%;
+          border-radius: 1rem;
+          background-color: $primary-yellow-color-dark;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .my-profile {
+    width: calc(100vw - 20rem);
+    .content {
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .my-profile {
+    width: calc(100vw - 10rem);
+    .content {
+      .profile-infos {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .my-profile {
+    width: 100vw;
+    .content {
+      .user-bloc {
+        align-items: center;
+        justify-content: center;
+        .user {
+          width: 32rem;
+        }
+      }
+      .profile-infos {
+        .info {
+          .row {
+            flex-wrap: wrap;
+            p {
+              width: 10rem;
+            }
+          }
+        }
+      }
+    }
+    .user,
+    .current-offre {
+      width: 100%;
+    }
+  }
+}

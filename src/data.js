@@ -78,7 +78,7 @@ export const offres = [
     title: "عرض سيلفر",
     price: "ابتداءً من 20دت/شهر",
     priceExact: "49",
-    duration : 'شهر' ,
+    duration: "شهر",
     content: [
       "فيديوهات تفسير كامل الدروس في كل المواد",
       "تمارين مرفقة بالاصلاح مطابق للبرنامج الرسمي",
@@ -97,7 +97,7 @@ export const offres = [
     title: "+ عرض سيلفر",
     price: "ابتداءً من 20دت/شهر",
     priceExact: "79",
-    duration : 'شهر' ,
+    duration: "شهر",
     content: [
       "فيديوهات تفسير كامل الدروس في كل المواد",
       "تمارين مرفقة بالاصلاح مطابق للبرنامج الرسمي",
@@ -116,7 +116,7 @@ export const offres = [
     title: "عرض غولد +",
     price: "ابتداءً من 20دت/شهر",
     priceExact: "850",
-    duration : 'سنة' ,
+    duration: "سنة",
     content: [
       "فيديوهات تفسير كامل الدروس في كل المواد",
       "تمارين مرفقة بالاصلاح مطابق للبرنامج الرسمي",
@@ -135,7 +135,7 @@ export const offres = [
     title: "عرض أبتموم",
     price: "ابتداءً من 20دت/شهر",
     priceExact: "119",
-    duration : 'شهر' ,
+    duration: "شهر",
     content: [
       "فيديوهات تفسير كامل الدروس في كل المواد",
       "تمارين مرفقة بالاصلاح مطابق للبرنامج الرسمي",
@@ -155,7 +155,7 @@ export const offres = [
     title: "عرض حصتي",
     price: "ابتداءً من 20دت/شهر",
     priceExact: "6",
-    duration : 'حصة' ,
+    duration: "حصة",
     content: [
       "فيديوهات تفسير كامل الدروس في كل المواد",
       "تمارين مرفقة بالاصلاح مطابق للبرنامج الرسمي",
@@ -391,5 +391,48 @@ export const points = [
     description: "Offer Silver",
     date: "13/06/2022",
     status: "Pending",
+  },
+];
+
+export const hours = [
+  { hour: "07:00" },
+  { hour: "09:00" },
+  { hour: "11:00" },
+  { hour: "13:00" },
+  { hour: "15:00" },
+  { hour: "17:00" },
+  { hour: "19:00" },
+  { hour: "21:00" },
+  { hour: "23:00" },
+];
+
+export const days = [
+  {
+    day: "Monday",
+    date: "06 Juin",
+  },
+  {
+    day: "Tuesday",
+    date: "07 Juin",
+  },
+  {
+    day: "Wednesday",
+    date: "08 Juin",
+  },
+  {
+    day: "Thursday",
+    date: "09 Juin",
+  },
+  {
+    day: "Friday",
+    date: "10 Juin",
+  },
+  {
+    day: "Saturday",
+    date: "11 Juin",
+  },
+  {
+    day: "Sunday",
+    date: "12 Juin",
   },
 ];

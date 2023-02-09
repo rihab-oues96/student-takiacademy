@@ -5,6 +5,8 @@ import right from "../../assets/icons/right.png";
 import left from "../../assets/icons/left.png";
 import LiveCard from "../liveCard/LiveCard";
 
+import { hours } from "../../data";
+
 const LiveSessionSmall = () => {
   return (
     <div className="live-session-small">
@@ -22,8 +24,7 @@ const LiveSessionSmall = () => {
           <img src={right} alt="icon-right" />
         </div>
         <div className="hours">
-
-        <LiveCard
+          <LiveCard
             title="رياضيات اصلاح امتحان عدد9"
             time="18:00 - 20:00"
             color="yellow"
@@ -33,53 +34,15 @@ const LiveSessionSmall = () => {
             time="18:00 - 20:00"
             color="purpule"
           />
-       
 
           <div className="vertical-line"></div>
-          <div className="hour">
-            <p>07:00</p>
-            <div className="line"></div>
-          </div>
 
-          <div className="hour">
-            <p>09:00</p>
-            <div className="line"></div>
-          </div>
-
-          <div className="hour">
-            <p>11:00</p>
-            <div className="line"></div>
-          </div>
-
-          <div className="hour">
-            <p>13:00</p>
-            <div className="line"></div>
-          </div>
-
-          <div className="hour">
-            <p>15:00</p>
-            <div className="line"></div>
-          </div>
-
-          <div className="hour">
-            <p>17:00</p>
-            <div className="line"></div>
-          </div>
-
-          <div className="hour">
-            <p>19:00</p>
-            <div className="line"></div>
-          </div>
-
-          <div className="hour">
-            <p>21:00</p>
-            <div className="line"></div>
-          </div>
-
-          <div className="hour">
-            <p>23:00</p>
-            <div className="line"></div>
-          </div>
+          {hours.map((h, index) => (
+            <div className="hour" key={index}>
+              <p>{h.hour}</p>
+              <div className="line"></div>
+            </div>
+          ))}
         </div>
       </div>
     </div>

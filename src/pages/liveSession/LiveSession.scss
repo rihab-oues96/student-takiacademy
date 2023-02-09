@@ -1,0 +1,214 @@
+@import "../../main.scss";
+
+.session-live {
+  display: flex;
+  flex-direction: column;
+  width: calc(100vw - 33rem);
+  padding: 4rem 2rem;
+
+  .live-session-heading {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+    color: $font-black-loght-color;
+  }
+
+  .calendar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .canlendar-heading {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 50%;
+        background-color: $background-blue-color1;
+
+        img {
+          filter: invert(0%) sepia(0%) saturate(7500%) hue-rotate(313deg)
+            brightness(98%) contrast(101%);
+        }
+      }
+
+      p {
+        width: 26.5rem;
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 3rem;
+        text-align: center;
+      }
+    }
+
+    .calendar-content {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      border: $border-gray-fine;
+      margin-top: 2rem;
+      border-radius: 2rem;
+
+      .first-line {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-bottom: $border-gray-fine;
+        height: 8rem;
+
+        .date-time-info {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-right: $border-gray-fine;
+          width: 9rem;
+          height: 100%;
+          position: relative;
+
+          p {
+            font-size: 1.4rem;
+            font-weight: 500;
+            line-height: 2.1rem;
+            color: $font-gray-color-dark1;
+          }
+
+          .d {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+          }
+          .t {
+            position: absolute;
+            bottom: 1rem;
+            left: 1rem;
+          }
+
+          .line {
+            height: 1px;
+            width: 10rem;
+            background-color: $border-gray;
+            transform: rotate(45deg);
+            position: absolute;
+          }
+        }
+
+        .day-info {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          width: 20.7rem;
+          height: 100%;
+          border-right: $border-gray-fine;
+
+          .day {
+            font-size: 1.8rem;
+            font-weight: 400;
+            line-height: 2.7rem;
+            color: $font-gray-color-dark1;
+          }
+
+          .date {
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 2.7rem;
+          }
+        }
+        .day-info-6 {
+          border-right: none;
+        }
+      }
+
+      .line {
+        display: flex;
+        flex-direction: row;
+        height: 7.4rem;
+
+        .hour {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 9rem;
+          height: 100%;
+          border-right: $border-gray-fine;
+
+          p {
+            font-size: 1.8rem;
+            font-weight: 400;
+            line-height: 2.7rem;
+            color: $font-gray-color-dark1;
+          }
+        }
+        .division {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-right: $border-gray-fine;
+          width: 20.7rem;
+          height: 100%;
+
+          .h-line {
+            width: 100%;
+            height: 1px;
+            background-color: $border-gray;
+          }
+        }
+      }
+
+      .line-8 {
+        .division,
+        .hour {
+          height: 80%;
+        }
+      }
+
+      .current-time {
+        display: flex;
+        align-items: center;
+        position: relative;
+        gap: 1rem;
+        z-index: 10;
+        left: 1rem;
+        bottom: 40rem;
+
+        .time {
+          display: flex;
+          align-items: center;
+          background-color: $primary-red-color1;
+          color: white;
+          clip-path: polygon(0 0, 70% 0, 100% 50%, 70% 100%, 0% 100%);
+          border-radius: 5px;
+          padding: 5px;
+          font-size: 1.7rem;
+          font-weight: 500;
+          line-height: 2.25rem;
+          width: 6rem;
+          height: 3rem;
+        }
+
+        .line-red {
+          display: flex;
+          align-items: center;
+          width: 90%;
+          height: 3px;
+          border-radius: 5px;
+          background-color: $primary-red-color1;
+
+          .circle-small {
+            width: 1.5rem;
+            height: 1.5rem;
+            background-color: $primary-red-color1;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+}

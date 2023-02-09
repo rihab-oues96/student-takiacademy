@@ -7,11 +7,12 @@ import bankTransfer from "../../../../assets/images/bankTransfer.png";
 import onlinePayment from "../../../../assets/images/onlinePayment.png";
 import d17 from "../../../../assets/images/d17.png";
 import BankTransfer from "../bankTransfer/BankTransfer";
-import { closeModal } from "../../../../features/modal/ModalSlice";
-import { useDispatch } from "react-redux";
+import { closeModal, openModal } from "../../../../features/modal/ModalSlice";
+import { useDispatch, useSelector } from "react-redux";
 
 const RechargerAccount = () => {
   const dispatch = useDispatch();
+  const { isModalOpen } = useSelector((state) => state.modal);
   return (
     <section className="recharger-account">
       <div className="recharger-account-heading">
@@ -30,10 +31,16 @@ const RechargerAccount = () => {
       <div className="payment-methods">
         <div className="method">
           <div className="image bank-tansfer">
-            <img src={bankTransfer} alt="money-img" />
+            <img
+              src={bankTransfer}
+              alt="money-img"
+              onClick={() => dispatch(openModal())}
+            />
           </div>
           <p>Bank Transfer</p>
         </div>
+
+     
 
         <div className="method ">
           <div className="image online-payment">

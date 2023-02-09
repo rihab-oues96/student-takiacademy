@@ -409,30 +409,23 @@ export const hours = [
 export const days = [
   {
     day: "Monday",
-    date: "06 Juin",
   },
   {
     day: "Tuesday",
-    date: "07 Juin",
   },
   {
     day: "Wednesday",
-    date: "08 Juin",
   },
   {
     day: "Thursday",
-    date: "09 Juin",
   },
   {
     day: "Friday",
-    date: "10 Juin",
   },
   {
     day: "Saturday",
-    date: "11 Juin",
   },
   {
     day: "Sunday",
-    date: "12 Juin",
   },
 ];

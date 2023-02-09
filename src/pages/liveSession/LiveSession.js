@@ -11,34 +11,39 @@ import {
   firstDayOfWeek,
   lastDayOfWeek,
   DaysOfWeek,
+  formattedDate,
 } from "../../utils";
 
 const LiveSession = () => {
   const [firstday, setFirstdayy] = useState(firstDayOfWeek(new Date()));
-
   const [lastday, setLastdayy] = useState(lastDayOfWeek(new Date()));
+
   const [daysOfWeek, setDaysOfWeek] = useState(DaysOfWeek(new Date(firstday)));
 
   const nextWeek = (firstday, lastday) => {
-    const newFirstDay = new Date(firstday.getTime() + 8 * 24 * 60 * 60 * 1000)
-      .toUTCString()
-      .slice(5, 12);
+    const newFirstDay = new Date(
+      firstday.getTime() + 7 * 24 * 60 * 60 * 1000
+    ).toUTCString();
+
     setFirstdayy(newFirstDay);
 
-    const newLastDay = new Date(lastday.getTime() + 8 * 24 * 60 * 60 * 1000)
-      .toUTCString()
-      .slice(5, 12);
+    const newLastDay = new Date(
+      lastday.getTime() + 7 * 24 * 60 * 60 * 1000
+    ).toUTCString();
+
     setLastdayy(newLastDay);
   };
 
   const prevWeek = (firstday, lastday) => {
-    const newFirstDay = new Date(firstday.getTime() - 8 * 24 * 60 * 60 * 1000)
-      .toUTCString()
-      .slice(5, 12);
+    const newFirstDay = new Date(
+      firstday.getTime() - 7 * 24 * 60 * 60 * 1000
+    ).toUTCString();
+
     setFirstdayy(newFirstDay);
-    const newLastDay = new Date(lastday.getTime() - 8 * 24 * 60 * 60 * 1000)
-      .toUTCString()
-      .slice(5, 12);
+    const newLastDay = new Date(
+      lastday.getTime() - 7 * 24 * 60 * 60 * 1000
+    ).toUTCString();
+
     setLastdayy(newLastDay);
   };
 
@@ -61,9 +66,11 @@ const LiveSession = () => {
               }}
             />
           </div>
+
           <p>
-            {firstday} - {lastday} {currentYear}
+            {formattedDate(firstday)} - {formattedDate(lastday)} {currentYear}
           </p>
+
           <div className="icon ">
             <img
               src={right}
@@ -88,7 +95,7 @@ const LiveSession = () => {
             {days.map((d, index) => (
               <div className={`day-info day-info-${index}`} key={index}>
                 <p className="day">{d.day}</p>
-                <p className="date">{daysOfWeek[index]}</p>
+                <p className="date">{formattedDate(daysOfWeek[index])}</p>
               </div>
             ))}
           </div>

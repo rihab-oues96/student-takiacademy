@@ -154,6 +154,7 @@
 
 @media screen and (max-width: 1440px) {
   .header {
+    width: calc(100vw - 26rem);
     .search-bloc {
       width: 40rem;
     }

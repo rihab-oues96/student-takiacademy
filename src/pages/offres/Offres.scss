@@ -19,17 +19,30 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    width: 100%;
     gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .offres {
+    width: calc(100vw - 26rem);
+
+    .offres-cards {
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .offres {
+    width: calc(100vw - 20rem);
   }
 }
 
 @media screen and (max-width: 768px) {
   .offres {
     width: calc(100vw - 10rem);
-
-    .offres-cards {
-      justify-content: center;
-    }
   }
 }
 

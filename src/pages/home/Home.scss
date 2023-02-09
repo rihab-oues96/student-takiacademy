@@ -10,7 +10,7 @@
   .left-side-home {
     display: flex;
     flex-direction: column;
-    padding: 3rem;
+    padding: 3rem 0;
 
     .learning,
     .videos-infos {
@@ -37,6 +37,7 @@
 
 @media screen and (max-width: 1440px) {
   .home {
+    width: calc(100vw - 26rem);
     align-items: center;
     justify-content: center;
 
@@ -49,7 +50,7 @@
     }
 
     .right-side-home {
-      width: 95%;
+      width: 90%;
       padding: 2rem 0;
       gap: 6rem;
       border-radius: 2rem;

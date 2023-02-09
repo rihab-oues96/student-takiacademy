@@ -124,6 +124,12 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .offre-card {
+    width: 35rem;
+  }
+}
+
 @media screen and (max-width: 425px) {
   .offre-card {
     width: 32rem;

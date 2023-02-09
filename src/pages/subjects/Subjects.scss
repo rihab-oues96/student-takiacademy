@@ -78,3 +78,31 @@
     }
   }
 }
+
+@media screen and (max-width: 1440px) {
+  .subjects {
+    width: calc(100vw - 26rem);
+
+    .subjects-cards {
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .subjects {
+    width: calc(100vw - 20rem);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .subjects {
+    width: calc(100vw - 10rem);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .subjects {
+    width: 100vw;
+  }
+}

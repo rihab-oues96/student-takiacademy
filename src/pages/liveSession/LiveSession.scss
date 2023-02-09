@@ -212,3 +212,27 @@
     }
   }
 }
+
+@media screen and (max-width: 1440px) {
+  .session-live {
+    width: calc(100vw - 26rem);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .session-live {
+    width: calc(100vw - 20rem);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .session-live {
+    width: calc(100vw - 10rem);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .session-live {
+    width: 100vw;
+  }
+}

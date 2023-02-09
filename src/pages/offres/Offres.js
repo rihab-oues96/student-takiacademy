@@ -20,7 +20,7 @@ const Offres = () => {
         ))}
       </div>
 
-      {isModalOpen && <Modal content='offreDescription' />}
+      {isModalOpen && <Modal />}
     </section>
   );
 };

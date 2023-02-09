@@ -5,20 +5,26 @@ import left from "../../assets/icons/left.png";
 import LiveCard from "./liveCard/LiveCard";
 import { days, hours } from "../../data";
 
-import { now,currentYear, firstDayOfWeek, lastDayOfWeek, DaysOfWeek } from "../../utils";
+import {
+  now,
+  currentYear,
+  firstDayOfWeek,
+  lastDayOfWeek,
+  DaysOfWeek,
+} from "../../utils";
 
 const LiveSession = () => {
   const [firstday, setFirstdayy] = useState(firstDayOfWeek(new Date()));
+
   const [lastday, setLastdayy] = useState(lastDayOfWeek(new Date()));
   const [daysOfWeek, setDaysOfWeek] = useState(DaysOfWeek(new Date(firstday)));
-
-
 
   const nextWeek = (firstday, lastday) => {
     const newFirstDay = new Date(firstday.getTime() + 8 * 24 * 60 * 60 * 1000)
       .toUTCString()
       .slice(5, 12);
     setFirstdayy(newFirstDay);
+
     const newLastDay = new Date(lastday.getTime() + 8 * 24 * 60 * 60 * 1000)
       .toUTCString()
       .slice(5, 12);

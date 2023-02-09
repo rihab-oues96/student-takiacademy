@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { openModal } from "../../../features/modal/ModalSlice";
 import "./BlueButton.scss";
 
-const BlueButton = ({ content, style }) => {
+const BlueButton = ({ content, style, modalContent }) => {
   const dispatch = useDispatch();
 
   if (content === "Upgrade") {
@@ -15,13 +15,15 @@ const BlueButton = ({ content, style }) => {
         </div>
       </Link>
     );
-  }
-
-  return (
-    <div className={`blue-btn ${style}`} onClick={() => dispatch(openModal())}>
-      <p className="btn-content">{content}</p>
-    </div>
-  );
+  } else
+    return (
+      <div
+        className={`blue-btn ${style}`}
+        onClick={() => dispatch(openModal(modalContent))}
+      >
+        <p className="btn-content">{content}</p>
+      </div>
+    );
 };
 
 export default BlueButton;

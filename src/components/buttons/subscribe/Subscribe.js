@@ -4,14 +4,14 @@ import { openModal } from "../../../features/modal/ModalSlice";
 import { getOffre } from "../../../features/offreDescription/OffreDiscriptionSlice";
 import { useDispatch } from "react-redux";
 
-const Subscribe = ({offre}) => {
+const Subscribe = ({ offre }) => {
   const dispatch = useDispatch();
 
   return (
     <div
       className="subscribe-btn"
       onClick={() => {
-        dispatch(openModal());
+        dispatch(openModal("OffreCardDescription"));
         dispatch(getOffre(offre));
       }}
     >

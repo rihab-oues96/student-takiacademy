@@ -28,13 +28,18 @@ const MyWallet = () => {
             </p>
 
             <div className="btns">
-              <BlueButton content="AddPoint" style="wallet-btn btn-add" />
+              <BlueButton
+                content="AddPoint"
+                style="wallet-btn btn-add"
+                modalContent="RechargerAccount"
+              />
               <BlueButton
                 content="TransferPoint"
                 style="wallet-btn btn-trans"
+                modalContent="TransferPoints"
               />
 
-              {isModalOpen && <Modal content="AddPoint" />}
+              {isModalOpen && <Modal />}
             </div>
           </div>
 

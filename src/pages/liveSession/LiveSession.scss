@@ -213,6 +213,28 @@
   }
 }
 
+@media screen and (max-width: 1496px) {
+  .session-live {
+    width: calc(100vw - 30rem);
+
+    .calendar {
+      .calendar-content {
+        .first-line {
+          .day-info {
+            width: 15rem;
+          }
+        }
+
+        .line {
+          .division {
+            width: 15rem;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 1440px) {
   .session-live {
     width: calc(100vw - 26rem);

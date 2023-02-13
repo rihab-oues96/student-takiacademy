@@ -191,6 +191,12 @@
   }
 }
 
+@media screen and (max-width: 1496px) {
+  .my-profile {
+    width: calc(100vw - 30rem);
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .my-profile {
     width: calc(100vw - 20rem);

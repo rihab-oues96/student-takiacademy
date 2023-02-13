@@ -152,6 +152,12 @@
   }
 }
 
+@media screen and (max-width: 1496px) {
+  .header {
+    width: calc(100vw - 30rem);
+  }
+}
+
 @media screen and (max-width: 1440px) {
   .header {
     width: calc(100vw - 26rem);

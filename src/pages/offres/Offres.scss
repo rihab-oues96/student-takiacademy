@@ -24,6 +24,12 @@
   }
 }
 
+@media screen and (max-width: 1496px) {
+  .offres {
+    width: calc(100vw - 30rem);
+  }
+}
+
 @media screen and (max-width: 1440px) {
   .offres {
     width: calc(100vw - 26rem);

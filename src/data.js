@@ -1,3 +1,13 @@
+import home from "./assets/icons/home.png";
+import offre from "./assets/icons/offres.png";
+import subject from "./assets/icons/subjects.png";
+import liveSession from "./assets/icons/liveSession.png";
+import forum from "./assets/icons/forum.png";
+import exam from "./assets/icons/exam.png";
+import myWallet from "./assets/icons/myWallet.png";
+import myProfile from "./assets/icons/myProfile.png";
+import assistance from "./assets/icons/myWallet.png";
+
 import im1 from "./assets/images/img1.png";
 import im2 from "./assets/images/img2.png";
 import im3 from "./assets/images/img3.png";
@@ -15,6 +25,18 @@ import hessaty from "./assets/images/hessaty.png";
 import zitouna from "./assets/images/zitouna.png";
 import biat from "./assets/images/biat.png";
 import poste from "./assets/images/poste.png";
+
+export const navigations = [
+  { link: "/", icon: home, pageName: "Home" },
+  { link: "/offres", icon: offre, pageName: "Offres" },
+  { link: "/subjects", icon: subject, pageName: "Subjects" },
+  { link: "/live-session", icon: liveSession, pageName: "Live Session" },
+  { link: "/forum", icon: forum, pageName: "Forum" },
+  { link: "/exams", icon: exam, pageName: "Exams" },
+  { link: "/my-wallet", icon: myWallet, pageName: "My Wallet" },
+  { link: "/my-profile", icon: myProfile, pageName: "My profile" },
+  { link: "/assistance", icon: assistance, pageName: "Assistance" },
+];
 
 export const recorded = [
   {

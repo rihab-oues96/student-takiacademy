@@ -1,6 +1,6 @@
 @import "../../main.scss";
 
-.live-card {
+.live-card-colored {
   width: 27rem;
   height: 6rem;
   border-radius: 1rem;
@@ -51,7 +51,6 @@
 
 .purpule {
   position: absolute;
-
   top: 15rem;
   left: 8.2rem;
   background-color: $background-purpule-color-light;

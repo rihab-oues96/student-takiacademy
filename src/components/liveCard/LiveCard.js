@@ -3,7 +3,7 @@ import "./LiveCard.scss";
 
 const LiveCard = ({ title, time, color }) => {
   return (
-    <div className={`live-card ${color}`}>
+    <div className={`live-card-colored ${color}`}>
       <div className="left-side-card"></div>
       <div className="circle"></div>
 

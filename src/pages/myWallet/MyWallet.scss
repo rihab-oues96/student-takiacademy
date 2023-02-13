@@ -194,3 +194,9 @@
     }
   }
 }
+
+@media screen and (max-width: 1496px) {
+  .my-wallet {
+    width: calc(100vw - 30rem);
+  }
+}

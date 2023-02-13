@@ -10,7 +10,7 @@
   .left-side-home {
     display: flex;
     flex-direction: column;
-    padding: 3rem 0;
+    padding: 3rem 0 0 2rem;
 
     .learning,
     .videos-infos {
@@ -32,6 +32,23 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1496px) {
+  .home {
+    width: calc(100vw - 30rem);
+
+    .left-side-home {
+      margin-bottom: 2rem;
+    }
+    .right-side-home {
+      width: 100%;
+      padding: 2rem;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-start;
+    }
   }
 }
 

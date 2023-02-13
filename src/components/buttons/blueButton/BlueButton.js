@@ -15,7 +15,7 @@ const BlueButton = ({ content, style, modalContent }) => {
         </div>
       </Link>
     );
-  } else
+  } else {
     return (
       <div
         className={`blue-btn ${style}`}
@@ -24,6 +24,7 @@ const BlueButton = ({ content, style, modalContent }) => {
         <p className="btn-content">{content}</p>
       </div>
     );
+  }
 };
 
 export default BlueButton;

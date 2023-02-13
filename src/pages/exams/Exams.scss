@@ -128,3 +128,9 @@
     }
   }
 }
+
+@media screen and (max-width: 1496px) {
+  .exams {
+    width: calc(100vw - 30rem);
+  }
+}

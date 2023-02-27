@@ -1,11 +1,10 @@
 import React from "react";
-
 import math from "../../../assets/images/math.png";
-import "./Subject.scss";
+import "./SubjectCard.scss";
 
-const Subject = () => {
+const SubjectCard = () => {
   return (
-    <div className="subject">
+    <div className="subject-card">
       <div className="subject-heading">
         <img src={math} alt="subject-image" />
         <p>رياضيات</p>
@@ -31,4 +30,4 @@ const Subject = () => {
   );
 };
 
-export default Subject;
+export default SubjectCard;

@@ -14,6 +14,7 @@ import assistance from "../../assets/icons/myWallet.png";
 import circleClose from "../../assets/icons/circleClose.png";
 import { NavLink } from "react-router-dom";
 import { closeSidebar } from "../../features/sideBar/SidebarSlice";
+import { navigations } from "../../data";
 
 const SmallSideBar = () => {
   const dispatch = useDispatch();
@@ -27,68 +28,18 @@ const SmallSideBar = () => {
       />
 
       <div className="navigations">
-        <NavLink to="/">
-          <div className="nav" onClick={() => dispatch(closeSidebar())}>
-            <img src={home} alt="icon-home" />
-            <p>Home</p>
-          </div>
-        </NavLink>
-
-        <NavLink to="/offres">
-          <div className="nav" onClick={() => dispatch(closeSidebar())}>
-            <img src={offres} alt="icon-offres" />
-            <p>Offres</p>
-          </div>
-        </NavLink>
-
-        <NavLink to="subjects">
-          <div className="nav" onClick={() => dispatch(closeSidebar())}>
-            <img src={subjects} alt="icon-subjects" />
-            <p>Subjects</p>
-          </div>
-        </NavLink>
-
-        <NavLink to="live-session">
-          <div className="nav" onClick={() => dispatch(closeSidebar())}>
-            <img src={liveSession} alt="icon-liveSession" />
-            <p>Live Session</p>
-          </div>
-        </NavLink>
-
-        <NavLink to="forum">
-          <div className="nav" onClick={() => dispatch(closeSidebar())}>
-            <img src={forum} alt="icon-forum" />
-            <p>The Forum</p>
-          </div>
-        </NavLink>
-
-        <NavLink to="exams">
-          <div className="nav" onClick={() => dispatch(closeSidebar())}>
-            <img src={exam} alt="icon-exam" />
-            <p>Exams</p>
-          </div>
-        </NavLink>
-
-        <NavLink to="my-wallet">
-          <div className="nav" onClick={() => dispatch(closeSidebar())}>
-            <img src={myWallet} alt="icon-myWallet" />
-            <p>My Wallet</p>
-          </div>
-        </NavLink>
-
-        <NavLink to="my-profile">
-          <div className="nav" onClick={() => dispatch(closeSidebar())}>
-            <img src={myProfile} alt="icon-myProfile" />
-            <p>My Profile</p>
-          </div>
-        </NavLink>
-
-        <NavLink to="assistance">
-          <div className="nav" onClick={() => dispatch(closeSidebar())}>
-            <img src={assistance} alt="icon-assistance" />
-            <p>Assistance</p>
-          </div>
-        </NavLink>
+        {navigations.map((nav, index) => (
+          <NavLink to={`${nav.link}`}>
+            <div
+              className="nav"
+              key={index}
+              onClick={() => dispatch(closeSidebar())}
+            >
+              <img src={nav.icon} alt="icon" />
+              <p>{nav.pageName}</p>
+            </div>
+          </NavLink>
+        ))}
       </div>
     </section>
   );

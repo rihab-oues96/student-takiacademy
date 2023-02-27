@@ -5,12 +5,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Poppins;
 }
 
 html {
   font-size: 62.5%;
-
+  font-family: Poppins;
   a {
     text-decoration: none;
   }
@@ -36,6 +35,7 @@ $background-yellow-color-light2: #fff6dc;
 $background-purpule-color-dark: #ebb3ff;
 $background-purpule-color-light: #faebff;
 $background-orange-color: #fff2ec;
+$background-gray-color: #f4f4f4;
 
 $primary-yellow-color: #ffe500;
 $primary-yellow-color-dark: #fcc102;
@@ -62,6 +62,7 @@ $font-gray-color-dark2: #959090;
 $font-gray-color-dark3: #9c9c9c;
 $font-gray-color-dark4: #7c7c7c;
 $font-gray-dark-color5: #8d8d8d;
+$font-gray-color-dark6: #8f8f8f;
 
 $border-gray: #e8e8e8;
 $border-blue-color: #9ad5f1;

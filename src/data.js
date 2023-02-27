@@ -26,6 +26,11 @@ import zitouna from "./assets/images/zitouna.png";
 import biat from "./assets/images/biat.png";
 import poste from "./assets/images/poste.png";
 
+import user from "./assets/icons/user.png";
+import bookmark from "./assets/icons/bookmark.png";
+import history from "./assets/icons/history.png";
+import share from "./assets/icons/share.png";
+
 export const navigations = [
   { link: "/", icon: home, pageName: "Home" },
   { link: "/offres", icon: offre, pageName: "Offres" },
@@ -449,5 +454,39 @@ export const days = [
   },
   {
     day: "Sunday",
+  },
+];
+
+export const LearningProgressInfos = [
+  {
+    subject: "تربية تكنولوجية",
+    value: "25",
+  },
+  {
+    subject: " علوم الحياة والأرض",
+    value: "75",
+  },
+  {
+    subject: "Français",
+    value: "50",
+  },
+];
+
+export const submenuItems = [
+  {
+    image: user,
+    item: "My Profile",
+  },
+  {
+    image: bookmark,
+    item: "Favorite",
+  },
+  {
+    image: history,
+    item: "History",
+  },
+  {
+    image: share,
+    item: "Log out",
   },
 ];

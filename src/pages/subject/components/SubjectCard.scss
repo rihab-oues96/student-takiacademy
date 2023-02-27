@@ -1,0 +1,69 @@
+@import "../../../main.scss";
+
+.subject-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 46rem;
+  height: 30rem;
+  padding: 2rem;
+  border-radius: 1.5rem;
+
+  border: 2px solid $border-blue-color-light;
+
+  .subject-heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2.5rem;
+
+    p {
+      font-family: Tajawal;
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 2.4rem;
+    }
+  }
+
+  .progress-bloc {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+
+    p {
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 2.4rem;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .progress-bar {
+      width: 100%;
+      height: 1.2rem;
+      border-radius: 1rem;
+      background-color: $border-gray;
+    }
+  }
+  .subject-infos {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    p {
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 1.5rem;
+      color: $font-gray-color-dark1;
+
+      span {
+        font-size: 1.8rem;
+        color: $primary-blue-color;
+      }
+    }
+  }
+}

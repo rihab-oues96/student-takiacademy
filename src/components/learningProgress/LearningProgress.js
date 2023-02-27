@@ -4,6 +4,8 @@ import "./LearningProgress.scss";
 import level from "../../assets/icons/level.png";
 import SeeMore from "../buttons/seeMore/SeeMore";
 
+import { LearningProgressInfos } from "../../data";
+
 const LearningProgress = () => {
   return (
     <div className="learning-progress">
@@ -26,42 +28,23 @@ const LearningProgress = () => {
         <div className="first-line"></div>
 
         <table className="table">
-          <tr className="line">
-            <td className="subject">
-              <div className="circle"></div>
-              تربية تكنولوجية
-            </td>
-            <td className="progress">
-              <div className="range">
-                <div className="level" style={{ width: "25%" }}></div>
-              </div>
-              <p>25%</p>
-            </td>
-          </tr>
-
-          <tr className="line">
-            <td className="subject">
-              <div className="circle"></div> علوم الحياة والأرض
-            </td>
-            <td className="progress">
-              <div className="range">
-                <div className="level" style={{ width: "75%" }}></div>
-              </div>
-              <p>75%</p>
-            </td>
-          </tr>
-          <tr className="line">
-            <td className="subject">
-              <div className="circle"></div>
-              Français
-            </td>
-            <td className="progress">
-              <div className="range">
-                <div className="level" style={{ width: "50%" }}></div>
-              </div>
-              <p>50%</p>
-            </td>
-          </tr>
+          {LearningProgressInfos.map((item, index) => (
+            <tr className="line" key={index}>
+              <td className="subject">
+                <div className="circle"></div>
+                {item.subject}
+              </td>
+              <td className="progress">
+                <div className="range">
+                  <div
+                    className="level"
+                    style={{ width: `${item.value}%` }}
+                  ></div>
+                </div>
+                <p>{item.value}%</p>
+              </td>
+            </tr>
+          ))}
         </table>
       </div>
     </div>

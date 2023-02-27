@@ -13,6 +13,7 @@ import Assistance from "./pages/assistance/Assistance";
 import SmallSideBar from "./layout/sidebar/SmallSideBar";
 import { useSelector } from "react-redux";
 import "./App.scss";
+import Subject from "./pages/subject/Subject";
 
 function App() {
   const { isSidebarOpen } = useSelector((state) => state.sidebar);
@@ -28,6 +29,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/offres" element={<Offres />} />
             <Route path="/subjects" element={<Subjects />} />
+            <Route path="/subject" element={<Subject />} />
             <Route path="/live-session" element={<LiveSession />} />
             <Route path="/forum" element={<Forum />} />
             <Route path="/exams" element={<Exams />} />

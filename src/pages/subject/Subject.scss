@@ -1,7 +1,8 @@
 @import "../../main.scss";
 
 .subject-page {
-  padding: 3rem 2rem;
+  width: calc(100vw - 33rem);
+  padding: 4rem 3rem;
 
   .subject-header {
     display: flex;
@@ -11,20 +12,21 @@
     margin-bottom: 2rem;
 
     .back {
-      width: 10.5rem;
-      height: 4.5rem;
+      width: 8.5rem;
+      height: 3.5rem;
       border-radius: 2rem;
-      gap: 0.5rem;
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: center;
+      cursor: pointer;
       background-color: $background-gray-color;
 
       p {
         color: $font-gray-color-dark6;
         font-size: 1.4rem;
         font-weight: 400;
+        margin-right: 8px;
       }
     }
 
@@ -34,5 +36,11 @@
       line-height: 2.4rem;
       color: $font-black-loght-color;
     }
+  }
+
+  .subject-page-content {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
   }
 }

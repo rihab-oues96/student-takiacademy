@@ -6,7 +6,7 @@ const SubjectCard = () => {
   return (
     <div className="subject-card">
       <div className="subject-heading">
-        <img src={math} alt="subject-image" />
+        <img src={math} alt="subject-img" />
         <p>رياضيات</p>
       </div>
 

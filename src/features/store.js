@@ -2,12 +2,16 @@ import { configureStore } from "@reduxjs/toolkit";
 
 import SidebarReducer from "./sideBar/SidebarSlice";
 import ModalReducer from "./modal/ModalSlice";
-import OffreDescriptionReducer from "./offreDescription/OffreDiscriptionSlice";
+import OffresReducer from "./offres/offresSlice";
+import OffreDetailsReducer from "./offres/offreDetailsSlice";
+import SubjectsReducer from "./subjects/subjectSlice";
 
 export const store = configureStore({
   reducer: {
     sidebar: SidebarReducer,
     modal: ModalReducer,
-    offreDescription: OffreDescriptionReducer,
+    offres: OffresReducer,
+    offreDetails: OffreDetailsReducer,
+    subjects: SubjectsReducer,
   },
 });

@@ -27,15 +27,15 @@ function App() {
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/offres" element={<Offres />} />
-            <Route path="/subjects" element={<Subjects />} />
-            <Route path="/subject" element={<Subject />} />
-            <Route path="/live-session" element={<LiveSession />} />
-            <Route path="/forum" element={<Forum />} />
-            <Route path="/exams" element={<Exams />} />
-            <Route path="/my-wallet" element={<MyWallet />} />
-            <Route path="/my-profile" element={<MyProfile />} />
-            <Route path="/assistance" element={<Assistance />} />
+            <Route path="offres" element={<Offres />} />
+            <Route path="subjects" element={<Subjects />} />
+            <Route path="subjects/subject" element={<Subject />} />
+            <Route path="live-session" element={<LiveSession />} />
+            <Route path="forum" element={<Forum />} />
+            <Route path="exams" element={<Exams />} />
+            <Route path="my-wallet" element={<MyWallet />} />
+            <Route path="my-profile" element={<MyProfile />} />
+            <Route path="assistance" element={<Assistance />} />
           </Routes>
         </div>
       </BrowserRouter>

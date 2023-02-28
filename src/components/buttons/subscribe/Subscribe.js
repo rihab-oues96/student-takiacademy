@@ -1,10 +1,10 @@
 import React from "react";
 import "./Subscribe.scss";
 import { openModal } from "../../../features/modal/ModalSlice";
-import { getOffre } from "../../../features/offreDescription/OffreDiscriptionSlice";
 import { useDispatch } from "react-redux";
+import { getOffreDetails } from "../../../features/offres/offreDetailsSlice";
 
-const Subscribe = ({ offre }) => {
+const Subscribe = ({ id }) => {
   const dispatch = useDispatch();
 
   return (
@@ -12,7 +12,7 @@ const Subscribe = ({ offre }) => {
       className="subscribe-btn"
       onClick={() => {
         dispatch(openModal("OffreCardDescription"));
-        dispatch(getOffre(offre));
+        dispatch(getOffreDetails(id));
       }}
     >
       <p>اشترك الان</p>

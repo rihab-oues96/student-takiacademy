@@ -2,13 +2,14 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import BankTransfer from "../../pages/myWallet/components/bankTransfer/BankTransfer";
 import D17 from "../../pages/myWallet/components/D17/D17";
-import TransferPoints from '../../pages/myWallet/components/transferPoints/TransferPoints'
+import TransferPoints from "../../pages/myWallet/components/transferPoints/TransferPoints";
 import OnlinePayment from "../../pages/myWallet/components/onlinePayment/OnlinePayment";
 import RechargerAccount from "../../pages/myWallet/components/rechargeAccount/RechargerAccount";
 import OffreCardDescription from "../offreCard/OffreCardDescription";
 import "./Modal.scss";
 
 import { closeModal } from "../../features/modal/ModalSlice";
+import { removeOffreDescription } from "../../features/offres/offreDetailsSlice";
 
 const Modal = ({ content }) => {
   const { componentName } = useSelector((state) => state.modal);
@@ -35,7 +36,13 @@ const Modal = ({ content }) => {
     <div className="modal">
       <div>{renderComponent}</div>
 
-      <div className="overlay" onClick={() => dispatch(closeModal())}></div>
+      <div
+        className="overlay"
+        onClick={() => {
+          dispatch(removeOffreDescription());
+          dispatch(closeModal());
+        }}
+      ></div>
     </div>
   );
 };

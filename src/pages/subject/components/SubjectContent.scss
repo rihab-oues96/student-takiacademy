@@ -1,12 +1,38 @@
 @import "../../../main.scss";
 
 .subject-content {
+  width: 115rem;
+  height: 75rem;
+  border-radius: 1rem;
+  border: 2px solid $border-blue-color-light;
+  box-shadow: 0px 6px 0px -2px $border-blue-color-light;
+
   .subject-content-header {
+    border-bottom: 2px solid $border-blue-color-light;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+
     ul {
       list-style: none;
       display: flex;
       flex-direction: row;
       align-items: center;
+      margin-left: 2rem;
+
+      a.active {
+        color: $primary-blue-color;
+
+        // &::after {
+        //   content: "";
+        //   position: absolute;
+        //   bottom: 0;
+        //   left: 0;
+        //   height: 2px;
+        //   width: 5rem;
+        //   background-color: $primary-blue-color;
+        // }
+      }
 
       li {
         margin-right: 4rem;
@@ -16,5 +42,11 @@
         color: $font-gray-color-dark1;
       }
     }
+  }
+
+  .lessons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

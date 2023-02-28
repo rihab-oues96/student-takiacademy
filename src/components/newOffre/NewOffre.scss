@@ -35,20 +35,22 @@
     p {
       font-size: 2rem;
       font-weight: 600;
+      font-family: Tajawal;
       text-align: center;
     }
+
     span {
       width: 20rem;
       font-size: 1.5rem;
       font-weight: 400;
+      color: $font-black-loght-color2;
       text-align: center;
     }
   }
 }
 
 @media screen and (max-width: 1445px) {
- .offre {
+  .offre {
     display: none;
   }
 }
-

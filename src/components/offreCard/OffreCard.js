@@ -11,7 +11,7 @@ const OffreCard = ({ offre }) => {
       <div className="price">
         <span>{offre.price}</span>
       </div>
-      <Subscribe style={offre.name} offre={offre} />
+      <Subscribe style={offre.name} id={offre._id} />
     </div>
   );
 };

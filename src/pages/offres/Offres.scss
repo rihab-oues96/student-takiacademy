@@ -7,6 +7,10 @@
   width: calc(100vw - 33rem);
   padding: 4rem 2rem;
 
+  h2 {
+    color: $font-black-loght-color;
+  }
+
   .main-title {
     margin-bottom: 2rem;
     font-size: 1.6rem;

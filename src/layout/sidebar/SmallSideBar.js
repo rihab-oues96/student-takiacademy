@@ -2,15 +2,6 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import "./SmallSideBar.scss";
 
-import home from "../../assets/icons/home.png";
-import offres from "../../assets/icons/offres.png";
-import subjects from "../../assets/icons/subjects.png";
-import liveSession from "../../assets/icons/liveSession.png";
-import forum from "../../assets/icons/forum.png";
-import exam from "../../assets/icons/exam.png";
-import myWallet from "../../assets/icons/myWallet.png";
-import myProfile from "../../assets/icons/myProfile.png";
-import assistance from "../../assets/icons/myWallet.png";
 import circleClose from "../../assets/icons/circleClose.png";
 import { NavLink } from "react-router-dom";
 import { closeSidebar } from "../../features/sideBar/SidebarSlice";

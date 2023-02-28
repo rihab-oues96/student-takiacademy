@@ -6,7 +6,7 @@ import bankTransfer from "../../../../assets/images/bankTransfer.png";
 import onlinePayment from "../../../../assets/images/onlinePayment.png";
 import d17 from "../../../../assets/images/d17.png";
 import { closeModal, openModal } from "../../../../features/modal/ModalSlice";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 
 const RechargerAccount = () => {
   const dispatch = useDispatch();

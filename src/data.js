@@ -31,6 +31,10 @@ import bookmark from "./assets/icons/bookmark.png";
 import history from "./assets/icons/history.png";
 import share from "./assets/icons/share.png";
 
+import prof1 from "./assets/images/prof1.png";
+import prof2 from "./assets/images/prof2.png";
+import prof3 from "./assets/images/prof3.png";
+
 export const navigations = [
   { link: "/", icon: home, pageName: "Home" },
   { link: "/offres", icon: offre, pageName: "Offres" },
@@ -99,7 +103,6 @@ export const languagess = [
 
 export const offres = [
   {
-    id: 1,
     name: "silver",
     image: silver,
     title: "عرض سيلفر",
@@ -118,7 +121,6 @@ export const offres = [
     ],
   },
   {
-    id: 2,
     name: "silverPlus",
     image: silverPlus,
     title: "+ عرض سيلفر",
@@ -137,7 +139,6 @@ export const offres = [
     ],
   },
   {
-    id: 3,
     name: "gold",
     image: gold,
     title: "عرض غولد +",
@@ -156,7 +157,6 @@ export const offres = [
     ],
   },
   {
-    id: 4,
     name: "optimum",
     image: optimum,
     title: "عرض أبتموم",
@@ -175,9 +175,7 @@ export const offres = [
     ],
   },
   {
-    id: 5,
     name: "hessaty",
-
     image: hessaty,
     title: "عرض حصتي",
     price: "ابتداءً من 20دت/شهر",
@@ -198,55 +196,44 @@ export const offres = [
 
 export const subjects = [
   {
-    id: 1,
-    title: "تربية تكنولوجية",
-    progression: 90,
+    name: "تربية تكنولوجية",
+    progress: 90,
   },
   {
-    id: 2,
-    title: "رياضيات ",
-    progression: 20,
+    name: "رياضيات ",
+    progress: 20,
   },
   {
-    id: 3,
-    title: "فيزياء",
-    progression: 60,
+    name: "فيزياء",
+    progress: 60,
   },
   {
-    id: 4,
-    title: "Français",
-    progression: 40,
+    name: "Français",
+    progress: 40,
   },
   {
-    id: 5,
-    title: "تربية إسلامية",
-    progression: 22,
-  },
-
-  {
-    id: 5,
-    title: "Anglais",
-    progression: 35,
+    name: "تربية إسلامية",
+    progress: 22,
   },
   {
-    id: 5,
-    title: "عربيّة",
-    progression: 56,
+    name: "Anglais",
+    progress: 35,
   },
   {
-    id: 5,
-    title: "علوم الحياة والأرض ",
-    progression: 3,
+    name: "عربيّة",
+    progress: 56,
   },
   {
-    id: 5,
-    title: "جغرافيا ",
-    progression: 14,
+    name: "علوم الحياة والأرض ",
+    progress: 3,
   },
   {
-    id: 5,
-    title: "تاريخ ",
-    progression: 70,
+    name: "جغرافيا ",
+    progress: 14,
+  },
+  {
+    name: "تاريخ ",
+    progress: 70,
   },
 ];
 
@@ -488,5 +475,27 @@ export const submenuItems = [
   {
     image: share,
     item: "Log out",
+  },
+];
+
+export const subjectLinks = [
+  { name: "Cours" },
+  { name: "Examens" },
+  { name: "Enregistrement" },
+  { name: "Divers" },
+];
+
+export const profs = [
+  {
+    name: "T.Abir",
+    image: prof1,
+  },
+  {
+    name: "N.Ilyes",
+    image: prof2,
+  },
+  {
+    name: " B.Safa",
+    image: prof3,
   },
 ];

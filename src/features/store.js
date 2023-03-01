@@ -5,6 +5,7 @@ import ModalReducer from "./modal/ModalSlice";
 import OffresReducer from "./offres/offresSlice";
 import OffreDetailsReducer from "./offres/offreDetailsSlice";
 import SubjectsReducer from "./subjects/subjectSlice";
+import SubjectContentReducer from "./subjects/subjectContentSlice";
 
 export const store = configureStore({
   reducer: {
@@ -13,5 +14,6 @@ export const store = configureStore({
     offres: OffresReducer,
     offreDetails: OffreDetailsReducer,
     subjects: SubjectsReducer,
+    subjectContent: SubjectContentReducer,
   },
 });

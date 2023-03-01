@@ -39,6 +39,7 @@ const offreDetailsSlice = createSlice({
     [getOffreDetails.rejected]: (state, action) => {
       state.loading = false;
       state.error = action.error;
+      console.log(state.error);
     },
   },
 });

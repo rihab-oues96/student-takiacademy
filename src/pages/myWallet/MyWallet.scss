@@ -21,7 +21,6 @@
       display: flex;
       flex-direction: row;
       align-items: center;
-      flex-wrap: wrap;
       gap: 2rem;
       margin-top: 1rem;
 
@@ -70,6 +69,7 @@
         border-radius: 1rem;
         border: 2px solid $border-blue-color-light;
         box-shadow: 0px 6px 0px -2px $border-blue-color-light;
+        overflow-x: auto;
 
         .account {
           display: flex;
@@ -78,7 +78,7 @@
           border-right: 2px solid $border-blue-color-light;
           padding: 2rem 0 2rem 2rem;
           gap: 1rem;
-          width: 36rem;
+          width: 378px;
           height: 14.8rem;
 
           .account-info,
@@ -89,7 +89,7 @@
             align-items: center;
 
             span {
-              font-size: 1.6rem;
+              font-size: 16px;
               font-weight: 400;
               line-height: 2.4rem;
               margin-right: 1rem;
@@ -97,7 +97,7 @@
             }
 
             p {
-              font-size: 1.6rem;
+              font-size: 16px;
               font-weight: 500;
               line-height: 2.4rem;
             }
@@ -126,8 +126,8 @@
     table {
       border: 2px solid $border-blue-color-light;
       border-radius: 2rem;
-      width: 100%;
       height: 8rem;
+      overflow-x: auto;
 
       .line-1 {
         .column {

@@ -1,29 +1,30 @@
 import React from "react";
-import "./LessonCard.scss";
+import "./ChapterCard.scss";
 
-import { profs } from "../../../data";
+import { profs } from "../../../../data";
 
-const LessonCard = () => {
+const ChapterCard = ({ chapter, ordre }) => {
   return (
     <div className="lesson-card">
       <div className="lesson-header">
         <div className="lesson-header-left">
-          <p className="lesson-number">01</p>
-          <p className="lesson-title">
-            الدرس الأول في الجبر _الأعداد الصحيحة الطبيعية
-          </p>
+          <p className="lesson-number">0{ordre}</p>
+          <p className="lesson-title">{chapter.chapter}</p>
         </div>
-        <p className="lesson-header-right">67 videos</p>
+        <p className="lesson-header-right">{chapter.numberOfVideos} videos</p>
       </div>
 
       <div className="lesson-progress">
         <div className="lesson-progress-header">
           <p>Progress</p>
-          <span>72%</span>
+          <span>{chapter.progress}%</span>
         </div>
 
         <div className="lesson-progress-progress">
-          <div className="lesson-progress-progress-level"></div>
+          <div
+            className="lesson-progress-progress-level"
+            style={{ width: `${chapter.progress}%` }}
+          ></div>
         </div>
       </div>
 
@@ -45,4 +46,4 @@ const LessonCard = () => {
   );
 };
 
-export default LessonCard;
+export default ChapterCard;

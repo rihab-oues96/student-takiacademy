@@ -4,23 +4,37 @@ import { getSubjects } from "../../features/subjects/subjectSlice";
 
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
+import { getSubjectContent } from "../../features/subjects/subjectContentSlice";
 
 const Subjects = () => {
   const dispatch = useDispatch();
-  const { subjects } = useSelector((state) => state.subjects);
+  const { subjects, loading } = useSelector((state) => state.subjects);
 
   useEffect(() => {
     dispatch(getSubjects());
   }, []);
+
+  if (loading)
+    return (
+      <section className="subjects">
+        <h2>Loading ...</h2>
+      </section>
+    );
 
   return (
     <section className="subjects">
       <p className="main-title">Your Subjects</p>
 
       <div className="subjects-cards">
-        {subjects.map((subject) => (
-          <Link to="/subjects/subject">
-            <div className="subject-card">
+        {subjects.map((subject, index) => (
+          <Link to="/subjects/subject" key={index}>
+            <div
+              className="subject-card"
+              onClick={() => {
+                dispatch(getSubjectContent(subject._id));
+               
+              }}
+            >
               <div className="circle">
                 <img src={subject.image} alt="subject-img" />
               </div>

@@ -48,7 +48,7 @@ const Header = () => {
 
       <div className="right-side">
         <div className="infos">
-          {/* <SelectLanguage /> */}
+          <SelectLanguage />
 
           <Link to="my-wallet">
             <div className="wallet">

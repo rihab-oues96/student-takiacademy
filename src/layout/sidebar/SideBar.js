@@ -18,8 +18,8 @@ const SideBar = () => {
 
       <div className="navigations">
         {navigations.map((nav, index) => (
-          <NavLink to={`${nav.link}`}>
-            <div className="nav" key={index}>
+          <NavLink to={`${nav.link}`} key={index}>
+            <div className="nav">
               <img src={nav.icon} alt="icon" />
               <p>{nav.pageName}</p>
             </div>

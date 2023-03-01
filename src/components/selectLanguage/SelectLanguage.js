@@ -27,18 +27,28 @@ const SelectLanguage = () => {
     setLanguages(l);
   }, [SelectLanguage]);
 
+  // const openSelect = () => {
+  //   setLanguages(languages.isSelected === true);
+  // };
+
   return (
-    <div className="select-language">
+    <div className="select-language ">
       <div className="languages">
-        {languages.map((language, index) => (
+        {languages?.map((language, index) => (
           <div
-            className="select"
+            className={`select ${
+              language.isSelected === false ? "shown" : ""
+            } `}
             key={index}
             onClick={() => selectLanguageHandler(language)}
           >
             <img src={language.image} alt="flag-en" />
             {language.isSelected === true ? (
-              <img src={down} alt="icon-down" />
+              <img
+                src={down}
+                alt="icon-down"
+                // onClick={() => openSelect()}
+              />
             ) : (
               <p>{language.name}</p>
             )}

@@ -13,7 +13,14 @@ import { removeOffreDescription } from "../../features/offres/offreDetailsSlice"
 const OffreCardDescription = () => {
   const dispatch = useDispatch();
 
-  const { offreDetails } = useSelector((state) => state.offreDetails);
+  const { offreDetails, loading } = useSelector((state) => state.offreDetails);
+
+  if (loading)
+    return (
+      <div className="offre-card-description  loading">
+        <h2>Loading ... </h2>
+      </div>
+    );
 
   if (offreDetails) {
     return (

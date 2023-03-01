@@ -1,6 +1,5 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
-import offresSlice from "../offres/offresSlice";
 
 const base_url = process.env.REACT_APP_base_url;
 

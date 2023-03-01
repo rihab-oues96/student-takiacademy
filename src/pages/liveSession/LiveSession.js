@@ -55,69 +55,71 @@ const LiveSession = () => {
     <section className="session-live">
       <p className="live-session-heading">LiveSession</p>
 
-      <div className="calendar">
-        <div className="canlendar-heading">
-          <div className="icon ">
-            <img
-              src={left}
-              alt="icon-left"
-              onClick={() => {
-                prevWeek(new Date(firstday), new Date(lastday));
-              }}
-            />
-          </div>
-
-          <p>
-            {formattedDate(firstday)} - {formattedDate(lastday)} {currentYear}
-          </p>
-
-          <div className="icon ">
-            <img
-              src={right}
-              alt="icon-right"
-              onClick={() => {
-                nextWeek(new Date(firstday), new Date(lastday));
-              }}
-            />
-          </div>
-        </div>
-
-        <div className="calendar-content">
-          <div className="first-line">
-            <div className="date-time-info">
-              <p className="d">Date</p>
-              <div className="line"></div>
-              <p className="t">Time</p>
+      <div className="cal">
+        <div className="calendar">
+          <div className="canlendar-heading">
+            <div className="icon ">
+              <img
+                src={left}
+                alt="icon-left"
+                onClick={() => {
+                  prevWeek(new Date(firstday), new Date(lastday));
+                }}
+              />
             </div>
 
-            <LiveCard />
+            <p>
+              {formattedDate(firstday)} - {formattedDate(lastday)} {currentYear}
+            </p>
 
-            {days.map((d, index) => (
-              <div className={`day-info day-info-${index}`} key={index}>
-                <p className="day">{d.day}</p>
-                <p className="date">{formattedDate(daysOfWeek[index])}</p>
-              </div>
-            ))}
+            <div className="icon ">
+              <img
+                src={right}
+                alt="icon-right"
+                onClick={() => {
+                  nextWeek(new Date(firstday), new Date(lastday));
+                }}
+              />
+            </div>
           </div>
 
-          {hours.map((h, index) => (
-            <div className={`line line-${index}`} key={index}>
-              <div className="hour">
-                <p>{h.hour}</p>
+          <div className="calendar-content">
+            <div className="first-line">
+              <div className="date-time-info">
+                <p className="d">Date</p>
+                <div className="line"></div>
+                <p className="t">Time</p>
               </div>
 
+              <LiveCard />
+
               {days.map((d, index) => (
-                <div className={`division division-${index}`} key={index}>
-                  <div className="h-line"></div>
+                <div className={`day-info day-info-${index}`} key={index}>
+                  <p className="day">{d.day}</p>
+                  <p className="date">{formattedDate(daysOfWeek[index])}</p>
                 </div>
               ))}
             </div>
-          ))}
 
-          <div className="current-time">
-            <div className="time">{now}</div>
-            <div className="line-red">
-              <div className="circle-small"></div>
+            {hours.map((h, index) => (
+              <div className={`line line-${index}`} key={index}>
+                <div className="hour">
+                  <p>{h.hour}</p>
+                </div>
+
+                {days.map((d, index) => (
+                  <div className={`division division-${index}`} key={index}>
+                    <div className="h-line"></div>
+                  </div>
+                ))}
+              </div>
+            ))}
+
+            <div className="current-time">
+              <div className="time">{now}</div>
+              <div className="line-red">
+                <div className="circle-small"></div>
+              </div>
             </div>
           </div>
         </div>

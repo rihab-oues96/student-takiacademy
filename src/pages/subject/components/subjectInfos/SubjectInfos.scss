@@ -1,4 +1,4 @@
-@import "../../../main.scss";
+@import "../../../../main.scss";
 
 .subject-card {
   display: flex;
@@ -16,6 +16,16 @@
     flex-direction: row;
     align-items: center;
     gap: 2rem;
+
+    .image {
+      width: 6.5rem;
+      height: 6.5rem;
+      border-radius: 50%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
 
     p {
       font-family: Tajawal;
@@ -47,6 +57,12 @@
       height: 1.2rem;
       border-radius: 1rem;
       background-color: $border-gray;
+
+      .progress-level {
+        height: 100%;
+        border-radius: 1rem;
+        background-color: $primary-yellow-color-dark;
+      }
     }
   }
   .subject-infos {

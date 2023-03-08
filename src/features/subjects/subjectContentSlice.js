@@ -15,12 +15,18 @@ const initialState = {
   subjectContent: {},
   loading: false,
   error: "",
+  subjectTitle: "",
 };
 
 const subjectContentSlice = createSlice({
   name: "SubjectContent",
   initialState,
-  reducers: {},
+  reducers: {
+    getSubjectTitle: (state, action) => {
+      getSubjectContent(action.payload);
+      state.subjectTitle = action.payload;
+    },
+  },
   extraReducers: {
     [getSubjectContent.pending]: (state) => {
       state.loading = true;
@@ -30,7 +36,6 @@ const subjectContentSlice = createSlice({
     [getSubjectContent.fulfilled]: (state, { payload }) => {
       state.loading = false;
       state.subjectContent = payload;
-      console.log(state.subjectContent);
     },
 
     [getSubjectContent.rejected]: (state, action) => {
@@ -41,5 +46,5 @@ const subjectContentSlice = createSlice({
   },
 });
 
-export const {} = subjectContentSlice.actions;
+export const { getSubjectTitle } = subjectContentSlice.actions;
 export default subjectContentSlice.reducer;

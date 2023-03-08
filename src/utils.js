@@ -20,7 +20,6 @@ export const DaysOfWeek = (firstday) => {
   }
   return days;
 };
-// console.log(DaysOfWeek(new Date()));
 
 export const formattedDate = (date) => {
   let data = date?.split(",")[1].split(" ");
@@ -28,22 +27,15 @@ export const formattedDate = (date) => {
   return returnedDate;
 };
 
-//////////////////////////////
-//// current year
-//////////////////////////////
 export const currentYear = new Date().getFullYear();
 
 //////////////////////////////
 //// current time
 //////////////////////////////
-
 let hour = (curr.getHours() < 10 ? "0" : "") + curr.getHours();
 let minutes = (curr.getMinutes() < 10 ? "0" : "") + curr.getMinutes();
 export const now = hour + ":" + minutes;
 
-//////////////////////////////
-//// next month
-//////////////////////////////
 export const nextMonth = (date, cb) => {
   const month = date.getMonth();
   if (month < 11) {
@@ -55,9 +47,6 @@ export const nextMonth = (date, cb) => {
   cb(new Date(date));
 };
 
-//////////////////////////////
-//// previous month
-//////////////////////////////
 export const prevMonth = (date, cb) => {
   const month = date.getMonth();
   if (month > 0) {

@@ -5,6 +5,7 @@ import Subscribe from "../buttons/subscribe/Subscribe";
 
 import close from "../../assets/icons/close.png";
 import vector from "../../assets/icons/vector.png";
+import loader from "../../assets/images/loader.gif";
 
 import { useDispatch, useSelector } from "react-redux";
 import { closeModal } from "../../features/modal/ModalSlice";
@@ -18,7 +19,7 @@ const OffreCardDescription = () => {
   if (loading)
     return (
       <div className="offre-card-description  loading">
-        <h2>Loading ... </h2>
+        <img className="loader" src={loader} alt="loader" />
       </div>
     );
 

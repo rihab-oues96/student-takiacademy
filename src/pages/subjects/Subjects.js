@@ -4,7 +4,7 @@ import { getSubjects } from "../../features/subjects/subjectSlice";
 
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { getSubjectContent } from "../../features/subjects/subjectContentSlice";
+import SubjectCard from "./SubjectCard";
 
 const Subjects = () => {
   const dispatch = useDispatch();
@@ -27,31 +27,8 @@ const Subjects = () => {
 
       <div className="subjects-cards">
         {subjects.map((subject, index) => (
-          <Link to="/subjects/subject" key={index}>
-            <div
-              className="subject-card"
-              onClick={() => {
-                dispatch(getSubjectContent(subject._id));
-               
-              }}
-            >
-              <div className="circle">
-                <img src={subject.image} alt="subject-img" />
-              </div>
-
-              <div className="subject-info">
-                <p className="subject-title">{subject.name}</p>
-                <div className="subject-progression">
-                  <div className="subject-range">
-                    <div
-                      className="level"
-                      style={{ width: `${subject.progress}%` }}
-                    ></div>
-                  </div>
-                  <span>{subject.progress}%</span>
-                </div>
-              </div>
-            </div>
+          <Link to={`/subjects/${subject._id}`} key={index}>
+            <SubjectCard subject={subject} />
           </Link>
         ))}
       </div>

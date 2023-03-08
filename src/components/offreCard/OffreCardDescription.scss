@@ -1,5 +1,11 @@
 @import "../../main.scss";
 
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .offre-card-description {
   width: 68rem;
   min-height: 100vh;
@@ -9,6 +15,11 @@
   z-index: 10;
   top: 0;
   right: 0;
+
+  .loader {
+    width: 8rem;
+    height: 8rem;
+  }
 
   .icon-close {
     position: absolute;
@@ -73,6 +84,7 @@
       height: 6.3rem;
       border-radius: 2rem;
       background-color: $silver-main-color-light;
+
       p {
         font-weight: 700;
         font-size: 2.4rem;
@@ -87,6 +99,7 @@
       font-weight: 700;
       font-size: 2.1rem;
       line-height: 2.52rem;
+
       span {
         color: $silver-main-color;
       }
@@ -95,11 +108,13 @@
       display: flex;
       flex-direction: column;
       gap: 2rem;
+
       .row {
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 1.5rem;
+
         p {
           text-align: right;
           width: 40rem;
@@ -112,6 +127,7 @@
     .subscribe-btn {
       margin-top: 2rem;
       background-color: $silver-main-color;
+
       p {
         color: white;
       }
@@ -124,10 +140,12 @@
     .title {
       color: $silverPlus-main-color;
     }
+
     .period {
       .selected {
         background-color: $silverPlus-main-color;
       }
+
       span {
         &:active {
           color: white;
@@ -135,14 +153,17 @@
         }
       }
     }
+
     .price {
       background-color: $silverPlus-main-color-light;
     }
+
     .description-title {
       span {
         color: $silverPlus-main-color;
       }
     }
+
     .subscribe-btn {
       background-color: $silverPlus-main-color;
     }
@@ -154,10 +175,12 @@
     .title {
       color: $gold-main-color;
     }
+
     .period {
       .selected {
         background-color: $gold-main-color;
       }
+
       span {
         &:active {
           color: white;
@@ -165,14 +188,17 @@
         }
       }
     }
+
     .price {
       background-color: $gold-main-color-light;
     }
+
     .description-title {
       span {
         color: $gold-main-color;
       }
     }
+
     .subscribe-btn {
       background-color: $gold-main-color;
     }
@@ -184,6 +210,7 @@
     .title {
       color: $optimum-main-color;
     }
+
     .period {
       .selected {
         background-color: $optimum-main-color;
@@ -196,14 +223,17 @@
         }
       }
     }
+
     .price {
       background-color: $optimum-main-color-light;
     }
+
     .description-title {
       span {
         color: $optimum-main-color;
       }
     }
+
     .subscribe-btn {
       background-color: $optimum-main-color;
     }
@@ -215,10 +245,12 @@
     .title {
       color: $hessaty-main-color;
     }
+
     .period {
       .selected {
         background-color: $hessaty-main-color;
       }
+
       span {
         &:active {
           color: white;
@@ -226,22 +258,19 @@
         }
       }
     }
+
     .price {
       background-color: $hessaty-main-color-light;
     }
+
     .description-title {
       span {
         color: $hessaty-main-color;
       }
     }
+
     .subscribe-btn {
       background-color: $hessaty-main-color;
     }
   }
-}
-
-.loading {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }

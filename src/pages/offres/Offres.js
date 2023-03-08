@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-
 import "./Offres.scss";
 
 // import { offres } from "../../data";

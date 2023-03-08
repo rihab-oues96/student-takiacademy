@@ -6,6 +6,7 @@ import left from "../../assets/icons/left.png";
 import LiveCard from "../liveCard/LiveCard";
 
 import { hours } from "../../data";
+import { Link } from "react-router-dom";
 
 const LiveSessionSmall = () => {
   return (
@@ -13,7 +14,9 @@ const LiveSessionSmall = () => {
       <div className="heading">
         <p className="title">Today's Live Sessions</p>
         <div className="all-dates-btn">
-          <p>All dates</p>
+          <Link to="live-session">
+            <p>All dates</p>
+          </Link>
         </div>
       </div>
 

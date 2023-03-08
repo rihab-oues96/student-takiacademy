@@ -15,6 +15,14 @@ const BlueButton = ({ content, style, modalContent }) => {
         </div>
       </Link>
     );
+  } else if (content === "Login") {
+    return (
+      <Link to="/">
+        <div className={`blue-btn ${style}`}>
+          <p className="btn-content">{content}</p>
+        </div>
+      </Link>
+    );
   } else {
     return (
       <div

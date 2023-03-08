@@ -5,6 +5,7 @@ import level from "../../assets/icons/level.png";
 import SeeMore from "../buttons/seeMore/SeeMore";
 
 import { LearningProgressInfos } from "../../data";
+import { Link } from "react-router-dom";
 
 const LearningProgress = () => {
   return (
@@ -14,7 +15,9 @@ const LearningProgress = () => {
           <img src={level} alt="icon-level" />
           <p>Learning Progress</p>
         </div>
-        <SeeMore />
+        <Link to="subjects">
+          <SeeMore />
+        </Link>
       </div>
 
       <div className="content">

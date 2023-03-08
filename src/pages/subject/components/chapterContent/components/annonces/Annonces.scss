@@ -1,0 +1,62 @@
+@import "../../../../../../main.scss";
+
+.annonces {
+  padding: 3rem;
+
+  p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: $color-black;
+  }
+
+  .annonce-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $border-gray;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    padding: 2rem;
+
+    .annonce-card-header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 2rem;
+      gap: 2rem;
+
+      .annonce-user-desc {
+        display: flex;
+        flex-direction: column;
+
+        span {
+          font-size: 1.2rem;
+          font-weight: 400;
+          color: $font-black-loght-color4;
+        }
+      }
+
+      .annonce-user-role {
+        width: 9rem;
+        height: 3.2rem;
+        border-radius: 5px;
+        background-color: $primary-blue-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p {
+          font-size: 1.6rem;
+          font-weight: 400;
+          color: $color-white;
+        }
+      }
+    }
+    .annonce-content {
+      p {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: $font-black-loght-color1;
+      }
+    }
+  }
+}

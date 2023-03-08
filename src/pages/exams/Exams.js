@@ -60,7 +60,7 @@ const Exams = () => {
                 <td className="column col-5">
                   {exam.exam ? (
                     <div className="btn-down">
-                      <img src={circleDown} />
+                      <img src={circleDown} alt='icon-download'/>
                       Download Exam
                     </div>
                   ) : (
@@ -70,7 +70,7 @@ const Exams = () => {
                 <td className="column col-6">
                   {exam.correction ? (
                     <div className="btn-down">
-                      <img src={circleDown} />
+                      <img src={circleDown} alt='icon-download'/>
                       Download Correction
                     </div>
                   ) : (
@@ -91,13 +91,13 @@ const Exams = () => {
                 Rows per Page :
                 <span>
                   10
-                  <img src={down} />
+                  <img src={down} alt='icon'/>
                 </span>
               </p>
             </td>
             <td className="column-buttom-end">
               <p>
-                1-0 of <img src={left} /> <img src={right} />
+                1-0 of <img src={left} alt='icon'/> <img src={right} alt='icon'/>
               </p>
             </td>
           </tr>

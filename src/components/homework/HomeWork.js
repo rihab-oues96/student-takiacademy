@@ -4,6 +4,7 @@ import "./HomeWork.scss";
 import homework from "../../assets/icons/homework.png";
 import circleDown from "../../assets/icons/circleDown.png";
 import SeeMore from "../buttons/seeMore/SeeMore";
+import { Link } from "react-router-dom";
 
 const HomeWork = () => {
   return (
@@ -13,7 +14,9 @@ const HomeWork = () => {
           <img src={homework} alt="icon-level" />
           <p>Homeworks</p>
         </div>
-        <SeeMore />
+        <Link to="live-session">
+          <SeeMore />
+        </Link>
       </div>
 
       <div className="content">

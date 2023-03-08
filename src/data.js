@@ -31,6 +31,9 @@ import bookmark from "./assets/icons/bookmark.png";
 import history from "./assets/icons/history.png";
 import share from "./assets/icons/share.png";
 
+import takiUser from "./assets/images/takiUser.png";
+
+import prof from "./assets/images/prof.png";
 import prof1 from "./assets/images/prof1.png";
 import prof2 from "./assets/images/prof2.png";
 import prof3 from "./assets/images/prof3.png";
@@ -479,10 +482,22 @@ export const submenuItems = [
 ];
 
 export const subjectLinks = [
-  { name: "Cours" },
-  { name: "Examens" },
-  { name: "Enregistrement" },
-  { name: "Divers" },
+  {
+    name: "Cours",
+    link: "",
+  },
+  {
+    name: "Examens",
+    link: "examens",
+  },
+  {
+    name: "Enregistrement",
+    link: "registration",
+  },
+  {
+    name: "Divers",
+    link: "divers",
+  },
 ];
 
 export const profs = [
@@ -497,5 +512,68 @@ export const profs = [
   {
     name: " B.Safa",
     image: prof3,
+  },
+];
+
+export const chapterContentLinks = [
+  {
+    name: "Lessons",
+    link: "",
+  },
+  {
+    name: "Exercices",
+    link: "exercices",
+  },
+  {
+    name: "Magazines",
+    link: "magazines",
+  },
+  {
+    name: "QCMs",
+    link: "qcms",
+  },
+];
+
+export const chapterDetailsLinks = [
+  {
+    name: "A propos du cours",
+    link: "apropos",
+  },
+  {
+    name: "Commentaires",
+    link: "commentaires",
+  },
+  {
+    name: "Q&A",
+    link: "Qa",
+  },
+  {
+    name: "Annonces",
+    link: "annonces",
+  },
+];
+
+export const annonceUser = [
+  {
+    name: "Ayachi Mohamed",
+    datePub: "2 Days Ago",
+    role: "Teacher",
+    image: prof,
+    annonce: ` Salut Max. J'adore vos conférences. Cependant celui-ci est très
+    déroutant. Lorsque vous avez commencé à utiliser extra et identifier,
+    vous avez rendu la conférence trop difficile à comprendre pour quelque
+    chose de très inutile dans le monde réel.Veuillez écrire un bon code
+    propre et proposer de meilleurs exemples à l'avenir.`,
+  },
+  {
+    name: "Taki Academy Team",
+    datePub: "2 Days Ago",
+    role: "Admin",
+    image: takiUser,
+    annonce: ` Salut Max. J'adore vos conférences. Cependant celui-ci est très
+    déroutant. Lorsque vous avez commencé à utiliser extra et identifier,
+    vous avez rendu la conférence trop difficile à comprendre pour quelque
+    chose de très inutile dans le monde réel.Veuillez écrire un bon code
+    propre et proposer de meilleurs exemples à l'avenir.`,
   },
 ];

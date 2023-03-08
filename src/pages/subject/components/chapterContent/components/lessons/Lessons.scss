@@ -1,0 +1,76 @@
+@import "../../../../../../main.scss";
+
+.lesson-dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid $border-blue-color-light;
+  width: 100%;
+
+  .lesson-dropdown-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    width: 100%;
+    height: 6rem;
+
+    p {
+      font-size: 1.5rem;
+      font-weight: 500;
+      font-family: Tajawal;
+      color: $color-black;
+    }
+  }
+  .colored {
+    background-color: $background-blue-color-light4;
+  }
+
+  .lesson-dropdown-content {
+    width: 100%;
+    overflow-y: auto;
+
+    .lesson-dropdown-content-line {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      height: 5rem;
+      padding: 0 2rem;
+
+      .lesson-dropdown-content-line-left {
+        display: flex;
+        gap: 2rem;
+
+        .checkbox {
+          width: 2rem;
+          height: 2rem;
+          border: 1px solid $font-gray-color-light-3;
+          border-radius: 5px;
+        }
+
+        .checked {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: $primary-blue-color;
+        }
+
+        .video-title {
+          font-size: 1.5rem;
+          font-weight: 500;
+          font-family: Tajawal;
+          color: $color-black;
+        }
+      }
+      .duration {
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: $color-black;
+      }
+    }
+  }
+}

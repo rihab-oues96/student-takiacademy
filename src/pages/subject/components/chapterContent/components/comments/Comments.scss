@@ -1,0 +1,295 @@
+@import "../../../../../../main.scss";
+
+.comments {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  .comments-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 2.4rem;
+      color: $color-black;
+    }
+
+    .new-comment {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border: 1px solid $primary-blue-color;
+      border-radius: 1rem;
+      width: 18.6rem;
+      height: 5rem;
+
+      p {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: $primary-blue-color;
+      }
+    }
+  }
+
+  .comments-stats-cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .comment-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: $border-gray-fine;
+      border-radius: 2rem;
+      gap: 1rem;
+      width: 33.4rem;
+      height: 23rem;
+
+      .comment-card-title {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 3rem;
+        color: $color-black;
+      }
+
+      .comment-card-content {
+        height: 70%;
+      }
+    }
+
+    .level {
+      .level-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+      }
+
+      .level-infos {
+        p {
+          font-size: 1.6rem;
+          font-weight: 500;
+          line-height: 2.4rem;
+          color: $font-gray-color-dark1;
+
+          span {
+            font-size: 1.6rem;
+            font-weight: 500;
+            line-height: 1.92rem;
+            color: $primary-blue-color;
+            font-family: Tajawal;
+          }
+        }
+
+        span {
+          font-size: 1.4rem;
+          font-weight: 400;
+          line-height: 2rem;
+          color: $font-black-loght-color5;
+        }
+      }
+    }
+
+    .loved {
+      .loved-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        .must-loved {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          padding-left: 2rem;
+          width: 28.7rem;
+          height: 4rem;
+          gap: 1rem;
+          background-color: $background-gray-color1;
+
+          p {
+            font-size: 1.4rem;
+            font-weight: 500;
+            line-height: 1.5rem;
+            color: $color-black;
+          }
+        }
+      }
+    }
+
+    .opinions {
+      .opinions-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+
+        .opinion-detail {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          gap: 2rem;
+
+          .progress {
+            background-color: $background-gray-color1;
+            border-radius: 5px;
+            width: 18.6rem;
+            height: 2.1rem;
+
+            .level {
+              height: 100%;
+              border-radius: 5px;
+              background-color: $primary-blue-color;
+            }
+          }
+
+          p {
+            font-size: 1.3rem;
+            font-weight: 500;
+            line-height: 1.5rem;
+            color: $color-black;
+          }
+        }
+      }
+    }
+  }
+
+  .comments-details {
+    display: flex;
+    flex-direction: column;
+
+    .rates {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 2rem;
+
+      p {
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 2.4rem;
+        color: $font-gray-color-dark1;
+      }
+
+      a.active {
+        p {
+          color: $primary-blue-color;
+        }
+      }
+    }
+  }
+
+  .users-comments {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .user-comment {
+      width: 100%;
+      padding: 2rem;
+      border: $border-gray-fine;
+      border-radius: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      .user-comment-header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .user-comment-header-left {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 2rem;
+
+          .user {
+            display: flex;
+            flex-direction: column;
+
+            p {
+              font-size: 1.6rem;
+              font-weight: 500;
+              color: $color-black;
+            }
+
+            span {
+              font-size: 1.2rem;
+              font-weight: 400;
+              color: $font-black-loght-color4;
+            }
+          }
+        }
+      }
+
+      .user-comment-content {
+        p {
+          font-size: 1.4rem;
+          font-weight: 400;
+          line-height: 2.9rem;
+          text-align: justify;
+          color: $color-black;
+        }
+      }
+
+      .user-comment-bottom {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+        .item {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          gap: 1rem;
+          width: 32rem;
+          height: 4rem;
+          border-radius: 1rem;
+
+          p {
+            font-size: 1.5rem;
+            font-weight: 400;
+            line-height: 2.25rem;
+
+            span {
+              font-weight: 700;
+            }
+          }
+        }
+
+        .recommended {
+          background-color: $background-blue-color-light8;
+          p {
+            color: $primary-blue-color;
+          }
+        }
+
+        .avis {
+          background-color: $font-green-color;
+          p {
+            color: $color-white;
+          }
+        }
+      }
+    }
+  }
+}

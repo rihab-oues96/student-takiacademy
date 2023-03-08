@@ -1,0 +1,135 @@
+@import "../../../../../../main.scss";
+
+.comment {
+  display: flex;
+  flex-direction: column;
+  border: $border-gray-fine;
+  border-radius: 1rem;
+  width: 100%;
+  gap: 2rem;
+  padding: 2rem;
+
+  .comment-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .comment-header-left {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 2rem;
+
+      .user {
+        display: flex;
+        flex-direction: column;
+
+        p {
+          font-size: 1.6rem;
+          font-weight: 500;
+          color: $color-black;
+        }
+
+        span {
+          font-size: 1.2rem;
+          font-weight: 400;
+          color: $font-black-loght-color4;
+        }
+      }
+    }
+
+    .comment-header-right {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1rem;
+
+      p {
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: $color-black;
+      }
+    }
+  }
+
+  .comment-content {
+    p {
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 2.9rem;
+      text-align: justify;
+      color: $font-black-loght-color1;
+    }
+  }
+
+  .comment-bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    .comment-bottom-left {
+      display: flex;
+      flex-direction: row;
+      gap: 4rem;
+
+      .liked,
+      .reply,
+      .follow {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        cursor: pointer;
+        gap: 1rem;
+
+        p {
+          font-size: 1.6rem;
+          font-weight: 500;
+          color: $primary-blue-color;
+        }
+
+        .liked-comm {
+          color: $font-pink-color;
+        }
+      }
+    }
+
+    .comment-bottom-right {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 2rem;
+
+      .likes,
+      .comments {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+
+        p {
+          font-size: 1.6rem;
+          font-weight: 500;
+        }
+      }
+
+      .likes {
+        p {
+          color: $font-pink-color;
+        }
+      }
+      .comments {
+        p {
+          color: $font-green-color;
+        }
+      }
+    }
+  }
+
+  .more-replies {
+    justify-content: space-evenly !important;
+    align-self: center;
+  }
+}

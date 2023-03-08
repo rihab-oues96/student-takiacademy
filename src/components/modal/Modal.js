@@ -11,7 +11,7 @@ import "./Modal.scss";
 import { closeModal } from "../../features/modal/ModalSlice";
 import { removeOffreDescription } from "../../features/offres/offreDetailsSlice";
 
-const Modal = ({ content }) => {
+const Modal = () => {
   const { componentName } = useSelector((state) => state.modal);
   const dispatch = useDispatch();
 

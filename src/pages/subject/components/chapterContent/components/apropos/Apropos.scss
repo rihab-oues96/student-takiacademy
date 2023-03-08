@@ -1,0 +1,86 @@
+@import "../../../../../../main.scss";
+
+.apropos {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  .ap {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid $border-gray1;
+    padding: 2rem;
+    gap: 4rem;
+
+    p {
+      font-size: 1.6rem;
+      font-weight: 400;
+    }
+
+    .apropos-chapitre-details {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      p {
+        font-size: 1.4rem;
+        font-weight: 300;
+      }
+    }
+
+    .apropos-prof-details {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+
+      .prof-desc {
+        display: flex;
+        flex-direction: column;
+
+        span {
+          font-size: 1.2rem;
+          font-weight: 400;
+          color: $font-black-loght-color4;
+        }
+      }
+    }
+
+    .jointes-desc {
+      display: flex;
+      flex-direction: row;
+      height: 3.6rem;
+
+      .correction {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: $background-blue-color-light7;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        width: 18.2rem;
+        height: 100%;
+      }
+
+      .download {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        background-color: $background-blue-color;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        gap: 1rem;
+        width: 14.6rem;
+        height: 100%;
+
+        p {
+          font-weight: 300;
+          font-size: 1.5rem;
+          color: white;
+        }
+      }
+    }
+  }
+}

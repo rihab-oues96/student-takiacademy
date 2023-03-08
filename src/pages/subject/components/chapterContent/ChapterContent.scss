@@ -1,0 +1,145 @@
+@import "../../../../main.scss";
+
+.chapter-content {
+  width: calc(100vw - 33rem);
+  padding: 4rem 3rem;
+
+  .main-title {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    color: $font-black-loght-color;
+  }
+
+  .chapter-content-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid $border-blue-color-light;
+    border-radius: 2rem;
+
+    .left-side {
+      .chapter-content-video {
+        border-top-left-radius: 2rem;
+        width: 110.5rem;
+        height: 62.6rem;
+
+        .chapter-content-video-header {
+          background-color: $background-blue-color-light1;
+          border-top-left-radius: 2rem;
+          height: 5rem;
+          padding: 0 2rem;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          p {
+            color: $background-blue-color-very-dark;
+            font-size: 1.7rem;
+            font-weight: 500;
+            font-family: Tajawal;
+          }
+        }
+        .chapter-content-video-conent {
+          background-color: $background-blue-color-very-dark;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 57.6rem;
+          width: 100%;
+
+          .chapter-content-video-conent-play {
+            background-color: white;
+            width: 85%;
+            height: 90%;
+          }
+        }
+      }
+
+      .chapter-content-video-infos {
+        display: flex;
+        align-items: center;
+        height: 5rem;
+
+        .chapter-content-video-infos-links {
+          padding: 0 3rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            gap: 3rem;
+
+            a.active {
+              li {
+                color: $primary-blue-color;
+              }
+            }
+
+            li {
+              color: $font-gray-color-dark1;
+              font-size: 1.6rem;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+
+    .right-side {
+      .chapter-content-pages {
+        width: 42rem;
+        height: 67.6rem;
+
+        .chapter-content-links-header {
+          border-bottom: 2px solid $border-blue-color-light;
+          padding: 0 2rem;
+          height: 5rem;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          ul {
+            width: 100%;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            a.active {
+              li {
+                color: $primary-blue-color;
+              }
+            }
+
+            li {
+              color: $font-gray-color-dark1;
+              font-size: 1.6rem;
+              font-weight: 400;
+            }
+          }
+        }
+
+        .chapter-content-links-content {
+          border-left: 2px solid $border-blue-color-light;
+          display: flex;
+          flex-direction: column;
+          overflow-y: auto;
+          height: 62.6rem;
+        }
+      }
+    }
+  }
+
+  .chapter-lesson-infos {
+    width: 110.5rem;
+  }
+}
